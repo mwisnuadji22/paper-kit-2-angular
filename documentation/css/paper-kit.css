@@ -17,7 +17,7 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td, button, input, select, textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
 
@@ -34,9 +34,10 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 1.825em;
+  font-size: 26px;
   line-height: 1.4;
   margin: 20px 0 0px;
+  font-weight: 600;
 }
 
 h4, .h4 {
@@ -193,10 +194,10 @@ blockquote small {
 
 /*     General overwrite     */
 body {
-  color: #66615b;
-  font-size: 14px;
-  font-weight: 300;
-  font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+  color: #444444;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -5929,7 +5930,7 @@ textarea.form-control {
 }
 
 .presentation-title {
-  font-size: 8em;
+  font-size: 6em;
   font-weight: 700;
   margin: 0;
   color: #FFFFFF;

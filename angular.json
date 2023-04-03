@@ -24,7 +24,11 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/sass/paper-kit.scss",
               "src/assets/css/demo.css",
-              "src/assets/css/nucleo-icons.css"
+              "src/assets/css/nucleo-icons.css",
+              "src/assets/icofont/icofont.min.css",
+              "src/assets/aos/aos.css",
+              "src/assets/aos/aos.js",
+              "src/styles.scss"
             ],
             "scripts": []
           },

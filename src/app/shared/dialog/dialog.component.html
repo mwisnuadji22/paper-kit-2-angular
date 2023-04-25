@@ -1,0 +1,62 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true" (click)="activeModal.close('close')">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form [formGroup]="formGroup" class="w-100">
+    <div class="form-group">
+      <label for="wilayah">Select Region</label>
+      <ng-select
+        [items]="dataOptions"
+        bindLabel="name"
+        bindValue="id"
+        formControlName="wilayah"
+        id="wilayah"
+        placeholder="Select Region"
+      ></ng-select>
+    </div>
+    <div class="form-group">
+      <label for="nama">Region Name:</label>
+      <input type="text" class="form-control" placeholder="Enter Region Name" formControlName="nama" id="nama">
+    </div>
+    <div class="form-group">
+      <label>Pos ID:</label>
+      <input type="text" class="form-control" placeholder="Pos ID" formControlName="pos_id">
+    </div>
+    <div class="form-group">
+      <label>Telemetri 07.01 - 13.00:</label>
+      <input type="text" class="form-control" placeholder="Input Telemetri" formControlName="jam1">
+    </div>
+    <div class="form-group">
+      <label>Telemetri 13.01 - 19.00:</label>
+      <input type="text" class="form-control" placeholder="Input Telemetri" formControlName="jam2">
+    </div>
+    <div class="form-group">
+      <label>Telemetri 19.01 - 01.00:</label>
+      <input type="text" class="form-control" placeholder="Input Telemetri" formControlName="jam3">
+    </div>
+    <div class="form-group">
+      <label>Telemetri 01.01 - 07.00:</label>
+      <input type="text" class="form-control" placeholder="Input Telemetri" formControlName="jam4">
+    </div>
+    <div class="form-group">
+      <label>Total Telemetri:</label>
+      <input [value]="valueTotal()" type="text" class="form-control" placeholder="Enter Total Telemetri" formControlName="total">
+    </div>
+    <div class="form-group">
+      <label>Daily Manuals (24 jam):</label>
+      <input type="text"  class="form-control" placeholder="Enter Daily Manuals (24 jam)" formControlName="rain">
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <div class="left-side">
+    <button type="button" class="btn btn-default btn-link" (click)="save(formGroup.value)">Save</button>
+  </div>
+  <div class="divider"></div>
+  <div class="right-side">
+    <button type="button" class="btn btn-danger btn-link" (click)="activeModal.close('Close click')">Back</button>
+  </div>
+</div>

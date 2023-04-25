@@ -1,0 +1,13 @@
+section {
+  padding: 60px;
+  overflow: hidden;
+}
+.nav-link.active {
+  background-color: rgba(1, 4, 136, 0.9) !important;
+  color: #FFFFFF;
+}
+.nav-link {
+  border-radius: 0.25rem!important;
+  padding: 0.5rem 1rem!important;
+  border: none!important;
+}

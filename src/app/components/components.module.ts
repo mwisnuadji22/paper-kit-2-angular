@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RecentDataComponent } from 'app/components/recent-data/recent-data.component';
 import { StatisticComponent } from 'app/components/statistic/statistic.component';
 import { VideoNewsComponent } from 'app/components/video-news/video-news.component';
@@ -18,6 +18,16 @@ import { ComponentsComponent } from './components.component';
 import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
+import {AllComponentComponent} from './all-component/all-component.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RainfallService } from 'app/shared/fetch-api/services/rainfall.service';
+import { RainfallComponent } from 'app/components/rainfall/rainfall.component';
+import { BgWaterLevelDataPipe } from 'app/shared/pipe/bg-water-level-data.pipe';
+import { ClimatologyComponent } from 'app/components/climatology/climatology.component';
+import { TelemetryComponent } from 'app/components/climatology/components/telemetri/telemetry.component';
+import { ManualComponent } from 'app/components/climatology/components/manual/manual.component';
+import { DialogComponent } from 'app/shared/dialog/dialog.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   imports: [
@@ -26,7 +36,10 @@ import { NgbdModalContent } from './modal/modal.component';
     NgbModule,
     NouisliderModule,
     RouterModule,
-    JwBootstrapSwitchNg2Module
+    JwBootstrapSwitchNg2Module,
+    HttpClientModule,
+    ReactiveFormsModule,
+    NgSelectModule
   ],
   declarations: [
     ComponentsComponent,
@@ -40,8 +53,16 @@ import { NgbdModalContent } from './modal/modal.component';
     WebsiteFeatureComponent,
     RecentDataComponent,
     StatisticComponent,
-    VideoNewsComponent
+    VideoNewsComponent,
+    AllComponentComponent,
+    RainfallComponent,
+    BgWaterLevelDataPipe,
+    ClimatologyComponent,
+    TelemetryComponent,
+    ManualComponent,
+    DialogComponent
   ],
+  providers: [RainfallService],
   entryComponents: [NgbdModalContent],
   exports:[ ComponentsComponent ]
 })

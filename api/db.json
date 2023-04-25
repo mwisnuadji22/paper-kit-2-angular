@@ -1,0 +1,2710 @@
+{
+  "rainfall_home": [
+    {
+      "pos": {
+        "id": "4",
+        "wilayah": "1",
+        "nama": "Jatisrono",
+        "current_ch": "26.400000000000002",
+        "tanggal": "2023-04-20"
+      }
+    },
+    {
+      "pos": {
+        "id": "70",
+        "wilayah": "1",
+        "nama": "Karangpandan",
+        "current_ch": "7.200000000000001",
+        "tanggal": "2023-04-20"
+      }
+    },
+    {
+      "pos": {
+        "id": "64",
+        "wilayah": "1",
+        "nama": "Waduk Delingan",
+        "current_ch": "22",
+        "tanggal": "2023-04-20"
+      }
+    },
+    {
+      "pos": {
+        "id": "8",
+        "wilayah": "2",
+        "nama": "Madiun - Jiwan (Klimatologi)",
+        "current_ch": "1",
+        "tanggal": "2023-04-20"
+      }
+    },
+    {
+      "pos": {
+        "id": "21",
+        "wilayah": "2",
+        "nama": "Ngawi",
+        "current_ch": "19.8",
+        "tanggal": "2023-04-20"
+      }
+    },
+    {
+      "pos": {
+        "id": "3007",
+        "wilayah": "2",
+        "nama": "Kare",
+        "current_ch": "4",
+        "tanggal": "2023-04-20"
+      }
+    },
+    {
+      "pos": {
+        "id": "10",
+        "wilayah": "3",
+        "nama": "Bojonegoro (Klimatologi)",
+        "current_ch": "2.1999999999999997",
+        "tanggal": "2023-04-20"
+      }
+    },
+    {
+      "pos": {
+        "id": "212",
+        "wilayah": "3",
+        "nama": "Pacal Dam",
+        "current_ch": "9.6",
+        "tanggal": "2023-04-20"
+      }
+    },
+    {
+      "pos": {
+        "id": "30",
+        "wilayah": "3",
+        "nama": "Sembung",
+        "current_ch": "28.4",
+        "tanggal": "2023-04-20"
+      }
+    },
+    {
+      "pos": {
+        "id": "230",
+        "wilayah": "3",
+        "nama": "Semampirejo",
+        "current_ch": "6.240000000000001",
+        "tanggal": "2023-04-20"
+      }
+    }
+  ],
+  "rainfall": [
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "216",
+        "nama": "Gunungan",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 10.199999999999998,
+      "jam": [
+        {
+          "1": 0,
+          "2": 10,
+          "3": 0,
+          "4": 0.2
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ]
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "27",
+        "nama": "Parangjoho",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "51",
+        "nama": "Baturetno (Klimatologi)",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 3.2,
+      "jam": [
+        {
+          "1": 0,
+          "2": 3.2,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "4.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "63",
+        "nama": "Peren ARR",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 1,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0.8,
+          "3": 0.2,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ]
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "60",
+        "nama": "SongPutri",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 1.9999999999999998,
+      "jam": [
+        {
+          "1": 0,
+          "2": 1.9999999999999998,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "3.6"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "40",
+        "nama": "Wonogiri (Klimatologi)",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 1.5,
+      "jam": [
+        {
+          "1": 0,
+          "2": 1.5,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "2.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "39",
+        "nama": "Waduk Nawangan",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "No Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "22.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "65",
+        "nama": "Giriwoyo",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0.5,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0.5,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "69",
+        "nama": "Batuwarno",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 3,
+      "jam": [
+        {
+          "1": 0,
+          "2": 3,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "3.5"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "28",
+        "nama": "Pracimantoro",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 13.2,
+      "jam": [
+        {
+          "1": 0,
+          "2": 13.2,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "16.4"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "4",
+        "nama": "Jatisrono",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0.99,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0.33,
+          "4": 0.66
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "9",
+        "nama": "Pabelan (Klimatologi)",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 2.6000000000000005,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0.4,
+          "3": 2.2,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "3.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "50",
+        "nama": "Bendung Colo (Klimatologi)",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 8.600000000000001,
+      "jam": [
+        {
+          "1": 0,
+          "2": 8.600000000000001,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "11.5"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "235",
+        "nama": "Jurug 2",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "No Data",
+          "4": "No Data"
+        }
+      ],
+      "rain": "41.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "214",
+        "nama": "Rejoso",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "234",
+        "nama": "Ngandong",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 1.8,
+      "jam": [
+        {
+          "1": 0,
+          "2": 1.8,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "2.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "19",
+        "nama": "Klaten",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "35",
+        "nama": "Kiringan",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "20",
+        "nama": "Nepen",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "70",
+        "nama": "Karangpandan",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "6.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "68",
+        "nama": "Jatipuro",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "No Data",
+          "2": "No Data",
+          "3": "No Data",
+          "4": "No Data"
+        }
+      ],
+      "rain": "28.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "64",
+        "nama": "Waduk Delingan",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "36",
+        "nama": "Tritis",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "55",
+        "nama": "Tawangmangu",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 26.400000000000002,
+      "jam": [
+        {
+          "1": 19.6,
+          "2": 6.8,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "24.5"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "221",
+        "nama": "Tangen Bridge 2",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "34",
+        "nama": "Kedungupit ARR",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "1",
+        "pos_id": "17",
+        "nama": "Kalijambe",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 1,
+      "jam": [
+        {
+          "1": 0,
+          "2": 1,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "1.5"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "24",
+        "nama": "Nawangan - Grindulu",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 28.999999999999996,
+      "jam": [
+        {
+          "1": 27.4,
+          "2": 1.5999999999999999,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "29.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "25",
+        "nama": "Pacitan ARR",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0.8,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0.8,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "6.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "5679",
+        "nama": "Sumberbendo",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "5345",
+        "nama": "Arjosari",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 14.200000000000001,
+      "jam": [
+        {
+          "1": 0,
+          "2": 14.200000000000001,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "19.6"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "236",
+        "nama": "Tegalombo",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "18",
+        "nama": "Kebonagung",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 1.2,
+      "jam": [
+        {
+          "1": 0.8,
+          "2": 0.4,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "66",
+        "nama": "Bangunsari",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "33",
+        "nama": "Sooko",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "31",
+        "nama": "Slahung",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "16",
+        "nama": "Waduk Gonggang",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 11.6,
+      "jam": [
+        {
+          "1": 0,
+          "2": 11.399999999999999,
+          "3": 0.2,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "14.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "59",
+        "nama": "TelagaNgebel",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 1,
+      "jam": [
+        {
+          "1": 0.5,
+          "2": 0.5,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "1.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "37",
+        "nama": "Waduk Notopuro",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 1,
+      "jam": [
+        {
+          "1": 0,
+          "2": 1,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "2.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "8",
+        "nama": "Madiun - Jiwan (Klimatologi)",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0.6000000000000001,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0.4,
+          "3": 0.2,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.5"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "208",
+        "nama": "Jatirogo",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "74",
+        "nama": "Waduk Kedung Brubus",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0.2,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0.2,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "75",
+        "nama": "Waduk Dawuhan",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0.6000000000000001,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0.6000000000000001,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ]
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "72",
+        "nama": "Waduk Pondok",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 1.7999999999999998,
+      "jam": [
+        {
+          "1": 0,
+          "2": 1.7999999999999998,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "1.5"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "29",
+        "nama": "Purwantoro",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 4.6000000000000005,
+      "jam": [
+        {
+          "1": 0,
+          "2": 4.6000000000000005,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "4.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "73",
+        "nama": "Waduk Sangiran",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "21",
+        "nama": "Ngawi",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "23",
+        "nama": "Ngrambe",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "203",
+        "nama": "Jururejo",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ]
+    },
+    {
+      "pos": {
+        "wilayah": "2",
+        "pos_id": "3007",
+        "nama": "Kare",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "32",
+        "nama": "Bojonegoro Kalikethek ARR",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ]
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "213",
+        "nama": "Randublatung",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "232",
+        "nama": "Pajeng",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "56",
+        "nama": "Karangbinangun - Lamongan",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "15",
+        "nama": "Doplang",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "217",
+        "nama": "Turi",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "11",
+        "nama": "Cepu ARR",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ]
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "10",
+        "nama": "Bojonegoro (Klimatologi)",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 16.999999999999996,
+      "jam": [
+        {
+          "1": 17,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "26",
+        "nama": "Padangan",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "212",
+        "nama": "Pacal Dam",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0.2,
+      "jam": [
+        {
+          "1": 0.2,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "22",
+        "nama": "Nglirip - Tuban",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 51.60000000000001,
+      "jam": [
+        {
+          "1": 23.4,
+          "2": 28.200000000000003,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "45.6"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "57",
+        "nama": "Lamongan",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "38",
+        "nama": "Waduk Gondang",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "30",
+        "nama": "Sembung",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 7.200000000000001,
+      "jam": [
+        {
+          "1": 0,
+          "2": 7.000000000000001,
+          "3": 0.2,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "7.8"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "230",
+        "nama": "Semampirejo",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 19.680000000000003,
+      "jam": [
+        {
+          "1": 0,
+          "2": 19.680000000000003,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "9.4"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "14",
+        "nama": "Balongpanggang - Gresik",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "3341",
+        "nama": "Jamprong",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "Data",
+          "2": "Data",
+          "3": "Data",
+          "4": "Data"
+        }
+      ],
+      "rain": "0.0"
+    },
+    {
+      "pos": {
+        "wilayah": "3",
+        "pos_id": "4009",
+        "nama": "Tondomulo",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "total": 0,
+      "jam": [
+        {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0
+        },
+        {
+          "1": "No Data",
+          "2": "No Data",
+          "3": "No Data",
+          "4": "No Data"
+        }
+      ],
+      "rain": "2.5"
+    }
+  ],
+  "climatology": [
+    {
+      "pos": {
+        "id": "206",
+        "wilayah": "1",
+        "nama": "Wonogiri Dam",
+        "tanggal": "23 Apr 2023",
+        "siaga_hijau": "135.30 mdpl",
+        "siaga_kuning": "136.00 mdpl",
+        "siaga_merah": "137.20 mdpl"
+      },
+      "pagi": [
+        {
+          "waktu": "",
+          "jam": "",
+          "wlevel": "",
+          "wlevel_mdpl": "",
+          "distance": "",
+          "status": ""
+        }
+      ],
+      "siang": [
+        {
+          "waktu": "2023-04-23 11:05:00",
+          "jam": "11:05:00",
+          "wlevel": "8.82",
+          "wlevel_mdpl": "135.82 mdpl",
+          "distance": "278",
+          "status": "Hijau"
+        }
+      ],
+      "sore": [
+        {
+          "waktu": "2023-04-23 18:00:00",
+          "jam": "18:00:00",
+          "wlevel": "8.82",
+          "wlevel_mdpl": "135.82 mdpl",
+          "distance": "278",
+          "status": "Hijau"
+        }
+      ],
+      "malam": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "23:55:00",
+          "wlevel": "8.81",
+          "wlevel_mdpl": "135.81 mdpl",
+          "distance": "279",
+          "status": "Hijau"
+        }
+      ],
+      "last_data": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "( 23:55:00 )",
+          "wlevel": "8.81",
+          "wlevel_mdpl": "135.81 mdpl",
+          "distance": "279",
+          "status": "Hijau"
+        }
+      ],
+      "manual": {
+        "enam": "135.96 mdpl",
+        "wlevel_enam": "8.96",
+        "status_enam": "Hijau",
+        "duabelas": "135.96 mdpl",
+        "wlevel_duabelas": "8.96",
+        "status_duabelas": "Hijau",
+        "delapanbelas": "135.95 mdpl",
+        "wlevel_delapanbelas": "8.95",
+        "status_delapanbelas": "Hijau"
+      }
+    },
+    {
+      "pos": {
+        "id": "204",
+        "wilayah": "1",
+        "nama": "Colo Weir",
+        "tanggal": "23 Apr 2023",
+        "siaga_hijau": "109.24 mdpl",
+        "siaga_kuning": "109.40 mdpl",
+        "siaga_merah": "109.71 mdpl"
+      },
+      "pagi": [
+        {
+          "waktu": "2023-04-23 06:00:00",
+          "jam": "06:00:00",
+          "wlevel": "4.16",
+          "wlevel_mdpl": "108.16 mdpl",
+          "distance": "4548",
+          "status": "Normal"
+        }
+      ],
+      "siang": [
+        {
+          "waktu": "2023-04-23 12:00:00",
+          "jam": "12:00:00",
+          "wlevel": "4.11",
+          "wlevel_mdpl": "108.11 mdpl",
+          "distance": "4593",
+          "status": "Normal"
+        }
+      ],
+      "sore": [
+        {
+          "waktu": "2023-04-23 18:00:00",
+          "jam": "18:00:00",
+          "wlevel": "4.13",
+          "wlevel_mdpl": "108.13 mdpl",
+          "distance": "4573",
+          "status": "Normal"
+        }
+      ],
+      "malam": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "23:55:00",
+          "wlevel": "4.16",
+          "wlevel_mdpl": "108.16 mdpl",
+          "distance": "4543",
+          "status": "Normal"
+        }
+      ],
+      "last_data": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "( 23:55:00 )",
+          "wlevel": "4.16",
+          "wlevel_mdpl": "108.16 mdpl",
+          "distance": "4543",
+          "status": "Normal"
+        }
+      ],
+      "manual": {
+        "enam": "108.10 mdpl",
+        "wlevel_enam": "4.10",
+        "status_enam": "Normal",
+        "duabelas": "108.10 mdpl",
+        "wlevel_duabelas": "4.10",
+        "status_duabelas": "Normal",
+        "delapanbelas": "108.10 mdpl",
+        "wlevel_delapanbelas": "4.10",
+        "status_delapanbelas": "Normal"
+      }
+    },
+    {
+      "pos": {
+        "id": "2",
+        "wilayah": "1",
+        "nama": "Jurug",
+        "tanggal": "23 Apr 2023",
+        "siaga_hijau": "82.98 mdpl",
+        "siaga_kuning": "83.98 mdpl",
+        "siaga_merah": "84.98 mdpl"
+      },
+      "pagi": [
+        {
+          "waktu": "2023-04-23 06:00:00",
+          "jam": "06:00:00",
+          "wlevel": "2.76",
+          "wlevel_mdpl": "78.99 mdpl",
+          "distance": "7843",
+          "status": "Normal"
+        }
+      ],
+      "siang": [
+        {
+          "waktu": "2023-04-23 12:00:00",
+          "jam": "12:00:00",
+          "wlevel": "2.58",
+          "wlevel_mdpl": "78.81 mdpl",
+          "distance": "8020",
+          "status": "Normal"
+        }
+      ],
+      "sore": [
+        {
+          "waktu": "2023-04-23 18:00:00",
+          "jam": "18:00:00",
+          "wlevel": "2.45",
+          "wlevel_mdpl": "78.68 mdpl",
+          "distance": "8150",
+          "status": "Normal"
+        }
+      ],
+      "malam": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "23:55:00",
+          "wlevel": "2.41",
+          "wlevel_mdpl": "78.64 mdpl",
+          "distance": "8195",
+          "status": "Normal"
+        }
+      ],
+      "last_data": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "( 23:55:00 )",
+          "wlevel": "2.41",
+          "wlevel_mdpl": "78.64 mdpl",
+          "distance": "8195",
+          "status": "Normal"
+        }
+      ],
+      "manual": {
+        "enam": "79.04 mdpl",
+        "wlevel_enam": "2.81",
+        "status_enam": "Normal",
+        "duabelas": "78.86 mdpl",
+        "wlevel_duabelas": "2.63",
+        "status_duabelas": "Normal",
+        "delapanbelas": "78.73 mdpl",
+        "wlevel_delapanbelas": "2.50",
+        "status_delapanbelas": "Normal"
+      }
+    },
+    {
+      "pos": {
+        "id": "12",
+        "wilayah": "1",
+        "nama": "Kajangan",
+        "tanggal": "23 Apr 2023",
+        "siaga_hijau": "56.57 mdpl",
+        "siaga_kuning": "57.07 mdpl",
+        "siaga_merah": "58.07 mdpl"
+      },
+      "pagi": [
+        {
+          "waktu": "2023-04-23 06:00:00",
+          "jam": "06:00:00",
+          "wlevel": "2.39",
+          "wlevel_mdpl": "51.16 mdpl",
+          "distance": "7005",
+          "status": "Normal"
+        }
+      ],
+      "siang": [
+        {
+          "waktu": "2023-04-23 12:00:00",
+          "jam": "12:00:00",
+          "wlevel": "2.61",
+          "wlevel_mdpl": "51.38 mdpl",
+          "distance": "6781",
+          "status": "Normal"
+        }
+      ],
+      "sore": [
+        {
+          "waktu": "2023-04-23 18:00:00",
+          "jam": "18:00:00",
+          "wlevel": "2.5",
+          "wlevel_mdpl": "51.27 mdpl",
+          "distance": "6892",
+          "status": "Normal"
+        }
+      ],
+      "malam": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "23:55:00",
+          "wlevel": "2.37",
+          "wlevel_mdpl": "51.14 mdpl",
+          "distance": "7026",
+          "status": "Normal"
+        }
+      ],
+      "last_data": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "( 23:55:00 )",
+          "wlevel": "2.37",
+          "wlevel_mdpl": "51.14 mdpl",
+          "distance": "7026",
+          "status": "Normal"
+        }
+      ],
+      "manual": {
+        "enam": "51.02 mdpl",
+        "wlevel_enam": "2.25",
+        "status_enam": "Normal",
+        "duabelas": "50.97 mdpl",
+        "wlevel_duabelas": "2.20",
+        "status_duabelas": "Normal",
+        "delapanbelas": "50.17 mdpl",
+        "wlevel_delapanbelas": "1.40",
+        "status_delapanbelas": "Normal"
+      }
+    },
+    {
+      "pos": {
+        "id": "6",
+        "wilayah": "2",
+        "nama": "Sekayu",
+        "tanggal": "23 Apr 2023",
+        "siaga_hijau": "89.22 mdpl",
+        "siaga_kuning": "90.22 mdpl",
+        "siaga_merah": "91.22 mdpl"
+      },
+      "pagi": [
+        {
+          "waktu": "2023-04-23 06:00:00",
+          "jam": "06:00:00",
+          "wlevel": "-1",
+          "wlevel_mdpl": "85.72 mdpl",
+          "distance": "7503",
+          "status": "Normal"
+        }
+      ],
+      "siang": [
+        {
+          "waktu": "2023-04-23 12:00:00",
+          "jam": "12:00:00",
+          "wlevel": "6.5",
+          "wlevel_mdpl": "93.22 mdpl",
+          "distance": "0",
+          "status": "Merah"
+        }
+      ],
+      "sore": [
+        {
+          "waktu": "2023-04-23 18:00:00",
+          "jam": "18:00:00",
+          "wlevel": "-3.49",
+          "wlevel_mdpl": "OOR",
+          "distance": "9999",
+          "status": "Normal"
+        }
+      ],
+      "malam": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "23:55:00",
+          "wlevel": "-3.49",
+          "wlevel_mdpl": "OOR",
+          "distance": "9999",
+          "status": "Normal"
+        }
+      ],
+      "last_data": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "( 23:55:00 )",
+          "wlevel": "-3.49",
+          "wlevel_mdpl": "83.23 mdpl",
+          "distance": "9999",
+          "status": "Normal"
+        }
+      ],
+      "manual": {
+        "enam": "87.22 mdpl",
+        "wlevel_enam": "0.50",
+        "status_enam": "Normal",
+        "duabelas": "87.22 mdpl",
+        "wlevel_duabelas": "0.50",
+        "status_duabelas": "Normal",
+        "delapanbelas": "87.22 mdpl",
+        "wlevel_delapanbelas": "0.50",
+        "status_delapanbelas": "Normal"
+      }
+    },
+    {
+      "pos": {
+        "id": "41",
+        "wilayah": "2",
+        "nama": "AhmadYani",
+        "tanggal": "23 Apr 2023",
+        "siaga_hijau": "60.30 mdpl",
+        "siaga_kuning": "61.30 mdpl",
+        "siaga_merah": "62.30 mdpl"
+      },
+      "pagi": [
+        {
+          "waktu": "2023-04-23 06:00:00",
+          "jam": "06:00:00",
+          "wlevel": "2.44",
+          "wlevel_mdpl": "56.02 mdpl",
+          "distance": "4567",
+          "status": "Normal"
+        }
+      ],
+      "siang": [
+        {
+          "waktu": "2023-04-23 12:00:00",
+          "jam": "12:00:00",
+          "wlevel": "2.38",
+          "wlevel_mdpl": "55.96 mdpl",
+          "distance": "4626",
+          "status": "Normal"
+        }
+      ],
+      "sore": [
+        {
+          "waktu": "2023-04-23 18:00:00",
+          "jam": "18:00:00",
+          "wlevel": "2.33",
+          "wlevel_mdpl": "55.91 mdpl",
+          "distance": "4675",
+          "status": "Normal"
+        }
+      ],
+      "malam": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "23:55:00",
+          "wlevel": "2.29",
+          "wlevel_mdpl": "55.87 mdpl",
+          "distance": "4715",
+          "status": "Normal"
+        }
+      ],
+      "last_data": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "( 23:55:00 )",
+          "wlevel": "2.29",
+          "wlevel_mdpl": "55.87 mdpl",
+          "distance": "4715",
+          "status": "Normal"
+        }
+      ],
+      "manual": {
+        "enam": "56.08 mdpl",
+        "wlevel_enam": "2.50",
+        "status_enam": "Normal",
+        "duabelas": "56.03 mdpl",
+        "wlevel_duabelas": "2.45",
+        "status_duabelas": "Normal",
+        "delapanbelas": "55.98 mdpl",
+        "wlevel_delapanbelas": "2.40",
+        "status_delapanbelas": "Normal"
+      }
+    },
+    {
+      "pos": {
+        "id": "47",
+        "wilayah": "3",
+        "nama": "Napel",
+        "tanggal": "23 Apr 2023",
+        "siaga_hijau": "38.53 mdpl",
+        "siaga_kuning": "39.38 mdpl",
+        "siaga_merah": "40.15 mdpl"
+      },
+      "pagi": [
+        {
+          "waktu": "2023-04-23 06:00:00",
+          "jam": "06:00:00",
+          "wlevel": "2.63",
+          "wlevel_mdpl": "34.46 mdpl",
+          "distance": "7176",
+          "status": "Normal"
+        }
+      ],
+      "siang": [
+        {
+          "waktu": "2023-04-23 12:00:00",
+          "jam": "12:00:00",
+          "wlevel": "2.4",
+          "wlevel_mdpl": "34.23 mdpl",
+          "distance": "7403",
+          "status": "Normal"
+        }
+      ],
+      "sore": [
+        {
+          "waktu": "2023-04-23 18:00:00",
+          "jam": "18:00:00",
+          "wlevel": "2.52",
+          "wlevel_mdpl": "34.35 mdpl",
+          "distance": "7288",
+          "status": "Normal"
+        }
+      ],
+      "malam": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "23:55:00",
+          "wlevel": "2.44",
+          "wlevel_mdpl": "34.27 mdpl",
+          "distance": "7360",
+          "status": "Normal"
+        }
+      ],
+      "last_data": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "( 23:55:00 )",
+          "wlevel": "2.44",
+          "wlevel_mdpl": "34.27 mdpl",
+          "distance": "7360",
+          "status": "Normal"
+        }
+      ],
+      "manual": {
+        "enam": "34.32 mdpl",
+        "wlevel_enam": "2.49",
+        "status_enam": "Normal",
+        "duabelas": "34.15 mdpl",
+        "wlevel_duabelas": "2.32",
+        "status_duabelas": "Normal",
+        "delapanbelas": "34.18 mdpl",
+        "wlevel_delapanbelas": "2.35",
+        "status_delapanbelas": "Normal"
+      }
+    },
+    {
+      "pos": {
+        "id": "5",
+        "wilayah": "3",
+        "nama": "Cepu",
+        "tanggal": "23 Apr 2023",
+        "siaga_hijau": "21.63 mdpl",
+        "siaga_kuning": "22.63 mdpl",
+        "siaga_merah": "23.63 mdpl"
+      },
+      "pagi": [
+        {
+          "waktu": "2023-04-23 06:00:00",
+          "jam": "06:00:00",
+          "wlevel": "0.65",
+          "wlevel_mdpl": "17.27 mdpl",
+          "distance": "8550",
+          "status": "Normal"
+        }
+      ],
+      "siang": [
+        {
+          "waktu": "2023-04-23 12:00:00",
+          "jam": "12:00:00",
+          "wlevel": "0.83",
+          "wlevel_mdpl": "17.45 mdpl",
+          "distance": "8373",
+          "status": "Normal"
+        }
+      ],
+      "sore": [
+        {
+          "waktu": "2023-04-23 18:00:00",
+          "jam": "18:00:00",
+          "wlevel": "0.93",
+          "wlevel_mdpl": "17.55 mdpl",
+          "distance": "8276",
+          "status": "Normal"
+        }
+      ],
+      "malam": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "23:55:00",
+          "wlevel": "0.88",
+          "wlevel_mdpl": "17.5 mdpl",
+          "distance": "8322",
+          "status": "Normal"
+        }
+      ],
+      "last_data": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "( 23:55:00 )",
+          "wlevel": "0.88",
+          "wlevel_mdpl": "17.5 mdpl",
+          "distance": "8322",
+          "status": "Normal"
+        }
+      ],
+      "manual": {
+        "enam": "17.27 mdpl",
+        "wlevel_enam": "0.65",
+        "status_enam": "Normal",
+        "duabelas": "17.44 mdpl",
+        "wlevel_duabelas": "0.82",
+        "status_duabelas": "Normal",
+        "delapanbelas": "17.54 mdpl",
+        "wlevel_delapanbelas": "0.92",
+        "status_delapanbelas": "Normal"
+      }
+    },
+    {
+      "pos": {
+        "id": "54",
+        "wilayah": "3",
+        "nama": "Bojonegoro - Kali Kethek",
+        "tanggal": "23 Apr 2023",
+        "siaga_hijau": "12.06 mdpl",
+        "siaga_kuning": "13.06 mdpl",
+        "siaga_merah": "14.06 mdpl"
+      },
+      "pagi": [
+        {
+          "waktu": "2023-04-23 06:00:00",
+          "jam": "06:00:00",
+          "wlevel": "-0.41",
+          "wlevel_mdpl": "8.46 mdpl",
+          "distance": "9411",
+          "status": "Normal"
+        }
+      ],
+      "siang": [
+        {
+          "waktu": "2023-04-23 12:00:00",
+          "jam": "12:00:00",
+          "wlevel": "-0.99",
+          "wlevel_mdpl": "OOR",
+          "distance": "9999",
+          "status": "Normal"
+        }
+      ],
+      "sore": [
+        {
+          "waktu": "2023-04-23 18:00:00",
+          "jam": "18:00:00",
+          "wlevel": "-0.46",
+          "wlevel_mdpl": "8.41 mdpl",
+          "distance": "9465",
+          "status": "Normal"
+        }
+      ],
+      "malam": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "23:55:00",
+          "wlevel": "-0.2",
+          "wlevel_mdpl": "8.67 mdpl",
+          "distance": "9203",
+          "status": "Normal"
+        }
+      ],
+      "last_data": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "( 23:55:00 )",
+          "wlevel": "-0.2",
+          "wlevel_mdpl": "8.67 mdpl",
+          "distance": "9203",
+          "status": "Normal"
+        }
+      ],
+      "manual": {
+        "enam": "8.42 mdpl",
+        "wlevel_enam": "-0.45",
+        "status_enam": "Normal",
+        "duabelas": "8.33 mdpl",
+        "wlevel_duabelas": "-0.54",
+        "status_duabelas": "Normal",
+        "delapanbelas": "8.37 mdpl",
+        "wlevel_delapanbelas": "-0.50",
+        "status_delapanbelas": "Normal"
+      }
+    },
+    {
+      "pos": {
+        "id": "240",
+        "wilayah": "3",
+        "nama": "Widang",
+        "tanggal": "23 Apr 2023",
+        "siaga_hijau": "11.54 mdpl",
+        "siaga_kuning": "12.29 mdpl",
+        "siaga_merah": "13.04 mdpl"
+      },
+      "pagi": [
+        {
+          "waktu": "2023-04-23 06:00:00",
+          "jam": "06:00:00",
+          "wlevel": "6.44",
+          "wlevel_mdpl": "9.48 mdpl",
+          "distance": "6367",
+          "status": "Normal"
+        }
+      ],
+      "siang": [
+        {
+          "waktu": "2023-04-23 12:00:00",
+          "jam": "12:00:00",
+          "wlevel": "6.46",
+          "wlevel_mdpl": "9.5 mdpl",
+          "distance": "6343",
+          "status": "Normal"
+        }
+      ],
+      "sore": [
+        {
+          "waktu": "2023-04-23 18:00:00",
+          "jam": "18:00:00",
+          "wlevel": "6.5",
+          "wlevel_mdpl": "9.54 mdpl",
+          "distance": "6307",
+          "status": "Normal"
+        }
+      ],
+      "malam": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "23:55:00",
+          "wlevel": "6.51",
+          "wlevel_mdpl": "9.55 mdpl",
+          "distance": "6292",
+          "status": "Normal"
+        }
+      ],
+      "last_data": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "( 23:55:00 )",
+          "wlevel": "6.51",
+          "wlevel_mdpl": "9.55 mdpl",
+          "distance": "6292",
+          "status": "Normal"
+        }
+      ],
+      "manual": {
+        "enam": "-",
+        "wlevel_enam": "-",
+        "status_enam": "Normal",
+        "duabelas": "-",
+        "wlevel_duabelas": "-",
+        "status_duabelas": "Normal",
+        "delapanbelas": "-",
+        "wlevel_delapanbelas": "-",
+        "status_delapanbelas": "Normal"
+      }
+    },
+    {
+      "pos": {
+        "id": "45",
+        "wilayah": "3",
+        "nama": "Karanggeneng",
+        "tanggal": "23 Apr 2023",
+        "siaga_hijau": "3.13 mdpl",
+        "siaga_kuning": "3.63 mdpl",
+        "siaga_merah": "4.13 mdpl"
+      },
+      "pagi": [
+        {
+          "waktu": "2023-04-23 06:00:00",
+          "jam": "06:00:00",
+          "wlevel": "1.56",
+          "wlevel_mdpl": "2.05 mdpl",
+          "distance": "754",
+          "status": "Normal"
+        }
+      ],
+      "siang": [
+        {
+          "waktu": "2023-04-23 12:00:00",
+          "jam": "12:00:00",
+          "wlevel": "1.71",
+          "wlevel_mdpl": "2.2 mdpl",
+          "distance": "739",
+          "status": "Normal"
+        }
+      ],
+      "sore": [
+        {
+          "waktu": "2023-04-23 18:00:00",
+          "jam": "18:00:00",
+          "wlevel": "1.78",
+          "wlevel_mdpl": "2.27 mdpl",
+          "distance": "732",
+          "status": "Normal"
+        }
+      ],
+      "malam": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "23:55:00",
+          "wlevel": "1.72",
+          "wlevel_mdpl": "2.21 mdpl",
+          "distance": "738",
+          "status": "Normal"
+        }
+      ],
+      "last_data": [
+        {
+          "waktu": "2023-04-23 23:55:00",
+          "jam": "( 23:55:00 )",
+          "wlevel": "1.72",
+          "wlevel_mdpl": "2.21 mdpl",
+          "distance": "738",
+          "status": "Normal"
+        }
+      ],
+      "manual": {
+        "enam": "2.02 mdpl",
+        "wlevel_enam": "1.53",
+        "status_enam": "Normal",
+        "duabelas": "2.18 mdpl",
+        "wlevel_duabelas": "1.69",
+        "status_duabelas": "Normal",
+        "delapanbelas": "2.23 mdpl",
+        "wlevel_delapanbelas": "1.74",
+        "status_delapanbelas": "Normal"
+      }
+    }
+  ],
+  "climatology_tm": [
+    {
+      "pos": {
+        "id": "51",
+        "wilayah": "1",
+        "nama": "Baturetno (Klimatologi)",
+        "tanggal": "23 Apr 2023 07:00:00 - 24 Apr 2023 06:59:00"
+      },
+      "data": {
+        "ch": "0.0",
+        "suhu_min": "24.5",
+        "suhu_max": "33.0",
+        "kelembapan": 98,
+        "kecepatan_angin": "1176.0"
+      }
+    },
+    {
+      "pos": {
+        "id": "9",
+        "wilayah": "1",
+        "nama": "Pabelan (Klimatologi)",
+        "tanggal": "23 Apr 2023 07:00:00 - 24 Apr 2023 06:59:00"
+      },
+      "data": {
+        "ch": "0.0",
+        "suhu_min": "0.0",
+        "suhu_max": "0.0",
+        "kelembapan": "0",
+        "kecepatan_angin": "0.0"
+      }
+    },
+    {
+      "pos": {
+        "id": "50",
+        "wilayah": "1",
+        "nama": "Bendung Colo (Klimatologi)",
+        "tanggal": "23 Apr 2023 07:00:00 - 24 Apr 2023 06:59:00"
+      },
+      "data": {
+        "ch": "0.2",
+        "suhu_min": "25.8",
+        "suhu_max": "33.0",
+        "kelembapan": 95,
+        "kecepatan_angin": "503.0"
+      }
+    },
+    {
+      "pos": {
+        "id": "8",
+        "wilayah": "2",
+        "nama": "Madiun - Jiwan (Klimatologi)",
+        "tanggal": "23 Apr 2023 07:00:00 - 24 Apr 2023 06:59:00"
+      },
+      "data": {
+        "ch": "0.0",
+        "suhu_min": "25.8",
+        "suhu_max": "34.9",
+        "kelembapan": 87,
+        "kecepatan_angin": "0.0"
+      }
+    },
+    {
+      "pos": {
+        "id": "10",
+        "wilayah": "3",
+        "nama": "Bojonegoro (Klimatologi)",
+        "tanggal": "23 Apr 2023 07:00:00 - 24 Apr 2023 06:59:00"
+      },
+      "data": {
+        "ch": "141.8",
+        "suhu_min": "25.3",
+        "suhu_max": "34.6",
+        "kelembapan": 93,
+        "kecepatan_angin": "0.0"
+      }
+    }
+  ],
+  "climatology_mn": [
+    {
+      "pos": {
+        "id": "51",
+        "wilayah": "1",
+        "nama": "Baturetno (Klimatologi)",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "data": {
+        "jam": "7",
+        "rain": "4.0",
+        "suhu_min": "23.0",
+        "suhu_max": "34.0",
+        "kelembapan": "92",
+        "kecepatan_angin": "874.0",
+        "lama_penyinaran": "360",
+        "penguapan": "3.0"
+      }
+    },
+    {
+      "pos": {
+        "id": "40",
+        "wilayah": "1",
+        "nama": "Wonogiri (Klimatologi)",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "data": {
+        "jam": "7",
+        "rain": "2.0",
+        "suhu_min": "24.7",
+        "suhu_max": "34.0",
+        "kelembapan": "",
+        "kecepatan_angin": "39.0",
+        "lama_penyinaran": "483",
+        "penguapan": "4.0"
+      }
+    },
+    {
+      "pos": {
+        "id": "9",
+        "wilayah": "1",
+        "nama": "Pabelan (Klimatologi)",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "data": {
+        "jam": "7",
+        "rain": "3.0",
+        "suhu_min": "21.0",
+        "suhu_max": "34.0",
+        "kelembapan": "95",
+        "kecepatan_angin": "525.0",
+        "lama_penyinaran": "450",
+        "penguapan": "3.5"
+      }
+    },
+    {
+      "pos": {
+        "id": "50",
+        "wilayah": "1",
+        "nama": "Bendung Colo (Klimatologi)",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "data": {
+        "jam": "7",
+        "rain": "11.5",
+        "suhu_min": "25.7",
+        "suhu_max": "34.4",
+        "kelembapan": "95",
+        "kecepatan_angin": "449.0",
+        "lama_penyinaran": "210",
+        "penguapan": "2.5"
+      }
+    },
+    {
+      "pos": {
+        "id": "8",
+        "wilayah": "2",
+        "nama": "Madiun - Jiwan (Klimatologi)",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "data": {
+        "jam": "7",
+        "rain": "0.5",
+        "suhu_min": "26.0",
+        "suhu_max": "35.6",
+        "kelembapan": "95",
+        "kecepatan_angin": "565.0",
+        "lama_penyinaran": "486",
+        "penguapan": "4.5"
+      }
+    },
+    {
+      "pos": {
+        "id": "10",
+        "wilayah": "3",
+        "nama": "Bojonegoro (Klimatologi)",
+        "tanggal": "22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00"
+      },
+      "data": {
+        "jam": "7",
+        "rain": "0.0",
+        "suhu_min": "24.0",
+        "suhu_max": "33.0",
+        "kelembapan": "91",
+        "kecepatan_angin": "377.0",
+        "lama_penyinaran": "360",
+        "penguapan": "4.0"
+      }
+    }
+  ],
+  "user": [
+    {
+      "user": "admin",
+      "password": "password",
+      "status": "active"
+    }
+  ]
+}

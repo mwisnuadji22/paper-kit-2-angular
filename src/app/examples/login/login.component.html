@@ -7,17 +7,17 @@
                       <div class="card card-register">
                           <h3 class="title">Welcome</h3>
                           <div class="social-line text-center">
-                              <a href="#pablo" class="btn btn-neutral btn-facebook btn-just-icon">
+                              <a class="btn btn-neutral btn-facebook btn-just-icon">
                                   <i class="fa fa-facebook-square"></i>
                               </a>
-                              <a href="#pablo" class="btn btn-neutral btn-google btn-just-icon">
+                              <a class="btn btn-neutral btn-google btn-just-icon">
                                   <i class="fa fa-google-plus"></i>
                               </a>
-                              <a href="#pablo" class="btn btn-neutral btn-twitter btn-just-icon">
+                              <a class="btn btn-neutral btn-twitter btn-just-icon">
                                   <i class="fa fa-twitter"></i>
                               </a>
                           </div>
-                          <form class="register-form">
+                          <form class="register-form" [formGroup]="formGroup" (ngSubmit)="submit(formGroup.value, formGroup.valid)">
                               <label>Email</label>
                               <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
                                 <div class="input-group-prepend">
@@ -26,7 +26,7 @@
                                   </span>
                                 </div>
 
-                                  <input type="text" class="form-control" placeholder="Email" (focus)="focus=true" (blur)="focus=false" >
+                                  <input type="text" class="form-control" formControlName="email" placeholder="Email" (focus)="focus=true" (blur)="focus=false" >
                               </div>
 
                               <label>Password</label>
@@ -36,13 +36,11 @@
                                       <i class="nc-icon nc-key-25"></i>
                                   </span>
                                 </div>
-                                  <input type="text" class="form-control" placeholder="Password" (focus)="focus1=true" (blur)="focus1=false" >
+                                  <input type="password" class="form-control" formControlName="password" placeholder="Password" (focus)="focus1=true" (blur)="focus1=false" >
                               </div>
-                              <button class="btn btn-danger btn-block btn-round">Register</button>
+                              <span class="text-white" *ngIf="errorInvalid">Your email address or password has invalid. Please correct and try again.</span>
+                              <button class="btn btn-danger btn-block btn-round" [disabled]="formGroup.invalid">Login</button>
                           </form>
-                          <div class="forgot">
-                              <a href="#" class="btn btn-link btn-danger">Forgot password?</a>
-                          </div>
                       </div>
                     </div>
                 </div>

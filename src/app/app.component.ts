@@ -24,15 +24,21 @@ export class AppComponent implements OnInit {
                 window.document.activeElement.scrollTop = 0;
             }
             this.navbar.sidebarClose();
-        });
+        })
         this.renderer.listen('window', 'scroll', (event) => {
             const number = window.scrollY;
             if (number > 150 || window.pageYOffset > 150) {
                 // add logic
                 navbar.classList.remove('navbar-transparent');
             } else {
+                let titlee = this.location.prepareExternalUrl(this.location.path());
+                if(titlee.charAt(0) === '#'){
+                    titlee = titlee.slice( 1 );
+                }
+                if (titlee === '/home' || titlee === '/login') {
+                    navbar.classList.add('navbar-transparent');
+                }
                 // remove logic
-                navbar.classList.add('navbar-transparent');
             }
         });
         var ua = window.navigator.userAgent;
@@ -51,8 +57,10 @@ export class AppComponent implements OnInit {
     }
     removeFooter() {
         var titlee = this.location.prepareExternalUrl(this.location.path());
-        titlee = titlee.slice( 1 );
-        if(titlee === 'signup' || titlee === 'nucleoicons'){
+        if(titlee.charAt(0) === '#'){
+            titlee = titlee.slice( 1 );
+        }
+        if(titlee === '/login' || titlee === 'nucleoicons'){
             return false;
         }
         else {

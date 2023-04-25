@@ -5,17 +5,23 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { ComponentsComponent } from './components/components.component';
 import { ProfileComponent } from './examples/profile/profile.component';
-import { SignupComponent } from './examples/signup/signup.component';
+import { LoginComponent } from 'app/examples/login/login.component';
 import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import {AllComponentComponent} from './components/all-component/all-component.component';
+import { RainfallComponent } from 'app/components/rainfall/rainfall.component';
+import { ClimatologyComponent } from 'app/components/climatology/climatology.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home',             component: ComponentsComponent },
     { path: 'user-profile',     component: ProfileComponent },
-    { path: 'signup',           component: SignupComponent },
+    { path: 'login',           component: LoginComponent },
     { path: 'landing',          component: LandingComponent },
-    { path: 'nucleoicons',      component: NucleoiconsComponent }
+    { path: 'nucleoicons',      component: NucleoiconsComponent },
+    { path: 'all-component', component: AllComponentComponent },
+    { path: 'rainfall', component: RainfallComponent },
+    { path: 'climatology', component: ClimatologyComponent },
 ];
 
 @NgModule({

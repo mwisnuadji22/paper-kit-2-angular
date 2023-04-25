@@ -11,13 +11,17 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
+import { HttpClientModule } from '@angular/common/http';
+import { DateParsePipe } from './shared/pipe/date-parse.pipe';
+import { BgWaterLevelDataPipe } from 'app/shared/pipe/bg-water-level-data.pipe';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    DateParsePipe
   ],
   imports: [
     BrowserModule,
@@ -27,6 +31,7 @@ import { ExamplesModule } from './examples/examples.module';
     ComponentsModule,
     ExamplesModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

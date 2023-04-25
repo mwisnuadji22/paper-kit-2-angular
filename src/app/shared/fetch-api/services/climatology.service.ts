@@ -22,6 +22,12 @@ export class ClimatologyService {
     return this.http.get<ClimatologyModel[]>(`${this.baseUrl}climatology_tm`);
   }
 
+  getClimatologyTMbyId(id: string): Observable<ClimatologyModel> {
+    return this.http.get<ClimatologyModel>(`${this.baseUrl}climatology_tm/${id}`);
+  }
+
+
+
   getListClimatologyMN(): Observable<ClimatologyModel[]> {
     return this.http.get<ClimatologyModel[]>(`${this.baseUrl}climatology_mn`);
   }

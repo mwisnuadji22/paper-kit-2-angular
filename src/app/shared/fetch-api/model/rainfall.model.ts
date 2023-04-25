@@ -1,4 +1,5 @@
 export interface RainfallModel {
+  id?: string;
   pos: Pos;
   total: number;
   jam: Jam[];

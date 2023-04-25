@@ -11,6 +11,7 @@
                               <i class="fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;22 Apr 2023
                             </button>
                             <button type="button" class="btn btn-labeled btn-primary textTanggal"
+                                    *ngIf="isLoggedIn"
                                     (click)="open()"
                                     style="background-color:rgba(1, 4, 136, 0.9) !important;">
                               <i class="fa fa-plus"></i>&nbsp;&nbsp;&nbsp;Add Data
@@ -53,6 +54,7 @@
                     <td colspan="4" class="b" style="text-align:center;vertical-align:middle;">Time (WIB)</td>
                     <td rowspan="2" class="b" style="text-align:center;vertical-align:middle;">Total Telemetri</td>
                     <td rowspan="2" class="b" style="text-align:center;vertical-align:middle;">Daily Manuals (24 jam)</td>
+                    <td *ngIf="isLoggedIn" rowspan="2" class="b" style="text-align:center;vertical-align:middle;">Actions</td>
                 </tr>
                 <tr>
                     <td class="b" style="text-align:center;vertical-align:middle;">07.01 - 13.00</td>
@@ -90,6 +92,20 @@
                             [ngStyle]="{ 'background-color': rainfall.rain | bgDataWaterLevel }">
                             {{ rainfall.rain ? rainfall.rain : '-' }}
                         </td>
+                        <td *ngIf="isLoggedIn">
+                            <div class="d-flex">
+                                <button
+                                  (click)="getRainfallById(rainfall.id)"
+                                  class="btn btn-round btn-sm btn-warning mr-2">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button
+                                  (click)="remove(rainfall.id)"
+                                  class="btn btn-round btn-sm btn-danger">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
                     </tr>
                 </ng-container>
 
@@ -122,6 +138,20 @@
                             [ngStyle]="{ 'background-color': rainfall.rain | bgDataWaterLevel }">
                             {{ rainfall.rain ? rainfall.rain : '-' }}
                         </td>
+                        <td *ngIf="isLoggedIn">
+                            <div class="d-flex">
+                                <button
+                                  (click)="getRainfallById(rainfall.id)"
+                                  class="btn btn-round btn-sm btn-warning mr-2">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button
+                                  (click)="remove(rainfall.id)"
+                                  class="btn btn-round btn-sm btn-danger">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
                     </tr>
                 </ng-container>
                 <tr>
@@ -152,6 +182,20 @@
                         <td class="b" style="text-align:center;vertical-align:middle;"
                             [ngStyle]="{ 'background-color': rainfall.rain | bgDataWaterLevel }">
                             {{ rainfall.rain ? rainfall.rain : '-' }}
+                        </td>
+                        <td *ngIf="isLoggedIn">
+                            <div class="d-flex">
+                                <button
+                                  (click)="getRainfallById(rainfall.id)"
+                                  class="btn btn-round btn-sm btn-warning mr-2">
+                                    <i class="fa fa-edit"></i>
+                                </button>
+                                <button
+                                  (click)="remove(rainfall.id)"
+                                  class="btn btn-round btn-sm btn-danger">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </div>
                         </td>
                     </tr>
                 </ng-container>

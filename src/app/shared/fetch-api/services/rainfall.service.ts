@@ -17,13 +17,17 @@ export class RainfallService {
   getRainFall(): Observable<RainfallModel[]> {
     return this.http.get<RainfallModel[]>(`${this.baseUrl}rainfall`)
   }
+
+  getRainFallById(id: string): Observable<RainfallModel> {
+    return this.http.get<RainfallModel>(`${this.baseUrl}rainfall/${id}`)
+  }
   
   addRainFall(payload: RainfallModel): Observable<Object> {
     return this.http.post(`${this.baseUrl}rainfall`, payload);
   }
 
   updateRainFall(payload: RainfallModel): Observable<Object> {
-    return this.http.put(`${this.baseUrl}rainfall`, payload);
+    return this.http.put(`${this.baseUrl}rainfall/${payload.id}`, payload);
   }
 
   deleteRainFall(id: string): Observable<Object> {

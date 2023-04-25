@@ -26,8 +26,10 @@ import { BgWaterLevelDataPipe } from 'app/shared/pipe/bg-water-level-data.pipe';
 import { ClimatologyComponent } from 'app/components/climatology/climatology.component';
 import { TelemetryComponent } from 'app/components/climatology/components/telemetri/telemetry.component';
 import { ManualComponent } from 'app/components/climatology/components/manual/manual.component';
-import { DialogComponent } from 'app/shared/dialog/dialog.component';
+import { RainfallDialogComponent } from 'app/shared/dialog/rainfall-dialog/rainfall-dialog.component';
 import { NgSelectModule } from '@ng-select/ng-select';
+import { ClimatologyDialogComponent } from 'app/shared/dialog/climatology-dialog/climatology-dialog.component';
+import { DialogBasicComponent } from 'app/shared/dialog/basic/dialog-basic.component';
 
 @NgModule({
   imports: [
@@ -60,7 +62,9 @@ import { NgSelectModule } from '@ng-select/ng-select';
     ClimatologyComponent,
     TelemetryComponent,
     ManualComponent,
-    DialogComponent
+    RainfallDialogComponent,
+    ClimatologyDialogComponent,
+    DialogBasicComponent
   ],
   providers: [RainfallService],
   entryComponents: [NgbdModalContent],

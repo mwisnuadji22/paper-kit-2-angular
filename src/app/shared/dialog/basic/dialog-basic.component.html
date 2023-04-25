@@ -1,0 +1,18 @@
+<div class="modal-header">
+  <h5 class="modal-title">{{ data.title }}</h5>
+  <button *ngIf="data.withCloseBtn" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true" (click)="activeModal.close('Close')">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="content">{{ data.content }}</div>
+</div>
+<div class="modal-footer" *ngIf="data.buttons">
+  <div class="d-flex justify-content-between">
+    <ng-container *ngFor="let btn of data.buttons">
+      <button type="button" class="{{ btn.class }}" (click)="actionClick(btn.action)">
+        {{ btn.name }}
+      </button>
+    </ng-container>
+  </div>
+</div>

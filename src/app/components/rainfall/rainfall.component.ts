@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { v4 as uuidv4 } from 'uuid';
 import { RainfallService } from 'app/shared/fetch-api/services/rainfall.service';
-import { RainfallModel, ResponsePosHome } from 'app/shared/fetch-api/model/rainfall.model';
+import { RainfallModel } from 'app/shared/fetch-api/model/rainfall.model';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { RainfallDialogComponent } from 'app/shared/dialog/rainfall-dialog/rainfall-dialog.component';
 import { UserService } from 'app/shared/fetch-api/services/user.service';

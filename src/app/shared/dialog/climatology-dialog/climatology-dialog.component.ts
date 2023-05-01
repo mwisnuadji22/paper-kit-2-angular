@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-climatology-dialog',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./climatology-dialog.component.scss']
 })
 export class ClimatologyDialogComponent implements OnInit {
+  @Input() data
   type: string;
   constructor() {}
   ngOnInit() {

@@ -23,13 +23,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { RainfallService } from 'app/shared/fetch-api/services/rainfall.service';
 import { RainfallComponent } from 'app/components/rainfall/rainfall.component';
 import { BgWaterLevelDataPipe } from 'app/shared/pipe/bg-water-level-data.pipe';
-import { ClimatologyComponent } from 'app/components/climatology/climatology.component';
-import { TelemetryComponent } from 'app/components/climatology/components/telemetri/telemetry.component';
-import { ManualComponent } from 'app/components/climatology/components/manual/manual.component';
 import { RainfallDialogComponent } from 'app/shared/dialog/rainfall-dialog/rainfall-dialog.component';
 import { NgSelectModule } from '@ng-select/ng-select';
-import { ClimatologyDialogComponent } from 'app/shared/dialog/climatology-dialog/climatology-dialog.component';
 import { DialogBasicComponent } from 'app/shared/dialog/basic/dialog-basic.component';
+import { AboutComponent } from 'app/components/about/about.component';
+import { TelajasariComponent } from 'app/components/telajasari/telajasari.component';
+import { WlaharCilacapComponent } from 'app/components/wlahar-cilacap/wlahar-cilacap.component';
+import { DateParsePipe } from 'app/shared/pipe/date-parse.pipe';
+import { ClimatologyDialogComponent } from 'app/shared/dialog/climatology-dialog/climatology-dialog.component';
+import { CilacapService } from 'app/shared/fetch-api/services/cilacap.service';
+import { TelajasariService } from 'app/shared/fetch-api/services/telajasari.service';
+import { UserService } from 'app/shared/fetch-api/services/user.service';
 
 @NgModule({
   imports: [
@@ -39,9 +43,10 @@ import { DialogBasicComponent } from 'app/shared/dialog/basic/dialog-basic.compo
     NouisliderModule,
     RouterModule,
     JwBootstrapSwitchNg2Module,
-    HttpClientModule,
     ReactiveFormsModule,
-    NgSelectModule
+    NgSelectModule,
+    DateParsePipe,
+    HttpClientModule,
   ],
   declarations: [
     ComponentsComponent,
@@ -59,14 +64,14 @@ import { DialogBasicComponent } from 'app/shared/dialog/basic/dialog-basic.compo
     AllComponentComponent,
     RainfallComponent,
     BgWaterLevelDataPipe,
-    ClimatologyComponent,
-    TelemetryComponent,
-    ManualComponent,
     RainfallDialogComponent,
     ClimatologyDialogComponent,
-    DialogBasicComponent
+    DialogBasicComponent,
+    AboutComponent,
+    TelajasariComponent,
+    WlaharCilacapComponent
   ],
-  providers: [RainfallService],
+  providers: [RainfallService, CilacapService, UserService],
   entryComponents: [NgbdModalContent],
   exports:[ ComponentsComponent ]
 })

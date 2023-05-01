@@ -1,140 +1,177 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { v4 as uuidv4 } from 'uuid';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormControl, FormGroup } from '@angular/forms';
-import { Jam, RainfallModel } from 'app/shared/fetch-api/model/rainfall.model';
-import { RainfallService } from 'app/shared/fetch-api/services/rainfall.service';
 import { FormModel } from 'app/shared/dialog/rainfall-dialog/interface/form.model';
+import { v4 as uuidv4 } from 'uuid';
+import { CilacapModel } from 'app/shared/fetch-api/model/cilacap.model';
+import { CilacapService } from 'app/shared/fetch-api/services/cilacap.service';
+import { TelajasariService } from 'app/shared/fetch-api/services/telajasari.service';
 
 @Component({
   selector: 'app-dialog',
   templateUrl: './rainfall-dialog.component.html',
-  styleUrls: ['./rainfall-dialog.component.scss']
+  styleUrls: ['./rainfall-dialog.component.scss'],
 })
 export class RainfallDialogComponent implements OnInit {
-  @Input() rainfallData: RainfallModel;
+  @Input() data: CilacapModel;
+  @Input() dataT: CilacapModel;
+  @Input() type: string;
   formGroup: FormGroup
-  rainfall: RainfallModel;
+  rainfall: CilacapModel;
   dataOptions = [
     {
       id: '1',
-      name: 'Hulu'
+      name: 'January'
     },
     {
       id: '2',
-      name: 'Madiun'
+      name: 'February'
     },
     {
       id: '3',
-      name: 'Hilir'
-    }
+      name: 'March'
+    },
+    {
+      id: '4',
+      name: 'April'
+    },
+    {
+      id: '5',
+      name: 'May'
+    },
+    {
+      id: '6',
+      name: 'June'
+    },
+    {
+      id: '7',
+      name: 'July'
+    },
+    {
+      id: '8',
+      name: 'August'
+    },
+    {
+      id: '9',
+      name: 'September'
+    },
+    {
+      id: '10',
+      name: 'October'
+    },
+    {
+      id: '11',
+      name: 'November'
+    },
+    {
+      id: '12',
+      name: 'December'
+    },
   ]
   constructor(
     public activeModal: NgbActiveModal,
-    private rainfallService: RainfallService
+    private cilacapService: CilacapService,
+    private telajasariService: TelajasariService
   ) {}
 
   ngOnInit() {
     this.initForm();
-    if (this.rainfallData) {
+    if (this.data || this.dataT) {
       this.setForm();
     }
   }
 
   initForm() {
     this.formGroup = new FormGroup({
-      wilayah: new FormControl(),
-      pos_id: new FormControl(),
-      nama: new FormControl(),
-      total: new FormControl(),
-      jam1: new FormControl(),
-      jam2: new FormControl(),
-      jam3: new FormControl(),
-      jam4: new FormControl(),
-      rain: new FormControl()
+      id: new FormControl(uuidv4()),
+      no: new FormControl(),
+      year: new FormControl(),
+      month: new FormControl(),
+      dewpoint_2m_temperature: new FormControl(),
+      maximum_2m_air_temperature: new FormControl(),
+      mean_2m_air_temperature: new FormControl(),
+      minimum_2m_air_temperature: new FormControl(),
+      total_precipitation: new FormControl(),
+      u_component_of_wind_10m: new FormControl(),
+      v_component_of_wind_10m: new FormControl()
     })
-    this.formGroup.get('total').disable();
   }
 
   setForm() {
-    this.formGroup.get('wilayah').setValue(this.rainfallData.pos.wilayah);
-    this.formGroup.get('pos_id').setValue(this.rainfallData.pos.pos_id);
-    this.formGroup.get('nama').setValue(this.rainfallData.pos.nama);
-    this.formGroup.get('total').setValue(this.rainfallData.total);
-    this.formGroup.get('jam1').setValue(this.rainfallData.jam[0]['1']);
-    this.formGroup.get('jam2').setValue(this.rainfallData.jam[0]['2']);
-    this.formGroup.get('jam3').setValue(this.rainfallData.jam[0]['3']);
-    this.formGroup.get('jam4').setValue(this.rainfallData.jam[0]['4']);
-    this.formGroup.get('rain').setValue(this.rainfallData?.rain);
+    if (this.dataT) {
+      this.setFormDataTelajasari();
+    } else {
+      this.formGroup.get('id').setValue(this.data.id);
+      this.formGroup.get('no').setValue(this.data.no);
+      this.formGroup.get('year').setValue(this.data.year);
+      this.formGroup.get('month').setValue(this.data.month);
+      this.formGroup.get('dewpoint_2m_temperature').setValue(this.data.dewpoint_2m_temperature);
+      this.formGroup.get('maximum_2m_air_temperature').setValue(this.data.maximum_2m_air_temperature);
+      this.formGroup.get('mean_2m_air_temperature').setValue(this.data.mean_2m_air_temperature);
+      this.formGroup.get('minimum_2m_air_temperature').setValue(this.data.minimum_2m_air_temperature);
+      this.formGroup.get('total_precipitation').setValue(this.data.total_precipitation);
+      this.formGroup.get('u_component_of_wind_10m').setValue(this.data.u_component_of_wind_10m);
+      this.formGroup.get('v_component_of_wind_10m').setValue(this.data.v_component_of_wind_10m);
+    }
   }
 
-  valueTotal(): string {
-    const jam1 = this.formGroup.get('jam1').value;
-    const jam2 = this.formGroup.get('jam2').value;
-    const jam3 = this.formGroup.get('jam3').value;
-    const jam4 = this.formGroup.get('jam4').value;
-    const parse1 = jam1 ? +jam1 : 0;
-    const parse2 = jam2 ? +jam2 : 0;
-    const parse3 = jam3 ? +jam3 : 0;
-    const parse4 = jam4 ? +jam4 : 0;
-    const value = parse1 + parse2 + parse3 + parse4;
-    this.formGroup.get('total').setValue(value.toString())
-    this.formGroup.get('total').disable();
-    return value.toString();
+  setFormDataTelajasari() {
+    this.formGroup.get('id').setValue(this.dataT.id);
+    this.formGroup.get('no').setValue(this.dataT.no);
+    this.formGroup.get('year').setValue(this.dataT.year);
+    this.formGroup.get('month').setValue(this.dataT.month);
+    this.formGroup.get('dewpoint_2m_temperature').setValue(this.dataT.dewpoint_2m_temperature);
+    this.formGroup.get('maximum_2m_air_temperature').setValue(this.dataT.maximum_2m_air_temperature);
+    this.formGroup.get('mean_2m_air_temperature').setValue(this.dataT.mean_2m_air_temperature);
+    this.formGroup.get('minimum_2m_air_temperature').setValue(this.dataT.minimum_2m_air_temperature);
+    this.formGroup.get('total_precipitation').setValue(this.dataT.total_precipitation);
+    this.formGroup.get('u_component_of_wind_10m').setValue(this.dataT.u_component_of_wind_10m);
+    this.formGroup.get('v_component_of_wind_10m').setValue(this.dataT.v_component_of_wind_10m);
   }
 
   save(value: FormModel): void {
-    this.formGroup.get('total').enable();
-    const total = this.formGroup.get('total').value;
-    let jam: Jam[] = [];
-    jam.push({
-      '1': value.jam1,
-      '2': value.jam2,
-      '3': value.jam3,
-      '4': value.jam4
-    });
-    jam.push({
-      '1': 'Data',
-      '2': 'Data',
-      '3': 'Data',
-      '4': 'Data'
-    });
-    let payload: RainfallModel = {
-      jam,
-      rain: value.rain,
-      total,
-      pos: {
-        pos_id: value.pos_id,
-        nama: value.nama,
-        wilayah: value.wilayah,
-        tanggal: '22 Apr 2023 07:00:00 - 23 Apr 2023 06:59:00'
+    if (this.data) {
+      this.updateRainfall(value)
+    } else if (this.dataT) {
+      this.updateTelajasari(value)
+    } else {
+      if (this.type) {
+        this.addTelajasari(value)
+      } else {
+        this.addRainfall(value)
       }
     }
-    payload.id = this.rainfallData ? this.rainfallData.id : uuidv4();
-    if (this.rainfallData) {
-      this.updateRainfall(payload)
-    } else {
-      this.addRainfall(payload)
-    }
   }
 
-  addRainfall(payload: RainfallModel) {
-    this.rainfallService.addRainFall(payload)
-      .subscribe({
-        next: (res) => {
-          this.activeModal.close('close')
-          window.location.reload();
-        }
-      })
+  addTelajasari(payload: CilacapModel) {
+    this.activeModal.close({ type: 'add', payload: payload})
   }
 
-  updateRainfall(payload: RainfallModel) {
-    this.rainfallService.updateRainFall(payload)
+  addRainfall(payload: CilacapModel) {
+    this.activeModal.close({ type: 'add', payload: payload})
+  }
+
+  updateTelajasari(payload: CilacapModel) {
+    payload.no = this.dataT.no;
+    this.telajasariService.updateTelajasari(payload)
       .subscribe({
         next: () => {
-          this.activeModal.close('Close')
           window.location.reload();
         }
       })
+    this.activeModal.close({ type: 'update', payload: payload})
+    window.location.reload()
+  }
+
+  updateRainfall(payload: CilacapModel) {
+    payload.no = this.data.no;
+    this.cilacapService.updateCilacap(payload)
+      .subscribe({
+        next: () => {
+          window.location.reload();
+        }
+      })
+    this.activeModal.close({ type: 'update', payload: payload})
+    window.location.reload()
   }
 }

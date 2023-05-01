@@ -12,8 +12,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
 import { HttpClientModule } from '@angular/common/http';
-import { DateParsePipe } from './shared/pipe/date-parse.pipe';
-import { BgWaterLevelDataPipe } from 'app/shared/pipe/bg-water-level-data.pipe';
+import { UserService } from 'app/shared/fetch-api/services/user.service';
+import { setTheme } from 'ngx-bootstrap/utils';
+setTheme('bs4');
 
 
 @NgModule({
@@ -21,7 +22,6 @@ import { BgWaterLevelDataPipe } from 'app/shared/pipe/bg-water-level-data.pipe';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    DateParsePipe
   ],
   imports: [
     BrowserModule,
@@ -31,9 +31,10 @@ import { BgWaterLevelDataPipe } from 'app/shared/pipe/bg-water-level-data.pipe';
     ComponentsModule,
     ExamplesModule,
     AppRoutingModule,
-    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

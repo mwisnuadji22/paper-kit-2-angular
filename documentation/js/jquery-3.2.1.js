@@ -3613,7 +3613,7 @@ function internalData( elem, name, data, pvt /* Internal Use Only */ ){
 		if ( pvt ) {
 			cache[ id ] = jQuery.extend( cache[ id ], name );
 		} else {
-			cache[ id ].data = jQuery.extend( cache[ id ].data, name );
+			cache[ id ].dataCilacap = jQuery.extend( cache[ id ].data, name );
 		}
 	}
 
@@ -9197,7 +9197,7 @@ Tween.prototype = {
 		this.prop = prop;
 		this.easing = easing || "swing";
 		this.options = options;
-		this.start = this.now = this.cur();
+		this.startDateCilacap = this.now = this.cur();
 		this.end = end;
 		this.unit = unit || ( jQuery.cssNumber[ prop ] ? "" : "px" );
 	},
@@ -9515,7 +9515,7 @@ jQuery.fx.timer = function( timer ) {
 
 jQuery.fx.interval = 13;
 
-jQuery.fx.start = function() {
+jQuery.fx.startDateCilacap = function() {
 	if ( !timerId ) {
 		timerId = setInterval( jQuery.fx.tick, jQuery.fx.interval );
 	}

@@ -7,47 +7,45 @@
 <div class="modal-body">
   <form [formGroup]="formGroup" class="w-100">
     <div class="form-group">
-      <label for="wilayah">Select Region</label>
+      <label>Year:</label>
+      <input formControlName="year" autocomplete="off" class="form-control" name="date">
+    </div>
+    <div class="form-group">
+      <label >Month:</label>
       <ng-select
         [items]="dataOptions"
         bindLabel="name"
         bindValue="id"
-        formControlName="wilayah"
-        id="wilayah"
-        placeholder="Select Region"
+        formControlName="month"
       ></ng-select>
     </div>
     <div class="form-group">
-      <label for="nama">Region Name:</label>
-      <input type="text" class="form-control" placeholder="Enter Region Name" formControlName="nama" id="nama">
+      <label>dewpoint:</label>
+      <input type="text" class="form-control" placeholder="Pos ID" formControlName="dewpoint_2m_temperature">
     </div>
     <div class="form-group">
-      <label>Pos ID:</label>
-      <input type="text" class="form-control" placeholder="Pos ID" formControlName="pos_id">
+      <label>Maximum Temperature (°C):</label>
+      <input type="text" class="form-control" placeholder="Input Maximum Temperature (°C" formControlName="maximum_2m_air_temperature">
     </div>
     <div class="form-group">
-      <label>Telemetri 07.01 - 13.00:</label>
-      <input type="text" class="form-control" placeholder="Input Telemetri" formControlName="jam1">
+      <label>Mean Temperature (°C):</label>
+      <input type="text" class="form-control" placeholder="Input Mean Temperature (°C)" formControlName="mean_2m_air_temperature">
     </div>
     <div class="form-group">
-      <label>Telemetri 13.01 - 19.00:</label>
-      <input type="text" class="form-control" placeholder="Input Telemetri" formControlName="jam2">
+      <label>Minimum Temperature (°C):</label>
+      <input type="text" class="form-control" placeholder="Input Minimum Temperature (°C)" formControlName="minimum_2m_air_temperature">
     </div>
     <div class="form-group">
-      <label>Telemetri 19.01 - 01.00:</label>
-      <input type="text" class="form-control" placeholder="Input Telemetri" formControlName="jam3">
+      <label>Total Prepicitation:</label>
+      <input type="text" class="form-control" placeholder="Enter Total Prepicitation" formControlName="total_precipitation">
     </div>
     <div class="form-group">
-      <label>Telemetri 01.01 - 07.00:</label>
-      <input type="text" class="form-control" placeholder="Input Telemetri" formControlName="jam4">
+      <label>Horizontal Vertical:</label>
+      <input type="text"  class="form-control" placeholder="Enter Horizontal Vertical" formControlName="u_component_of_wind_10m">
     </div>
     <div class="form-group">
-      <label>Total Telemetri:</label>
-      <input [value]="valueTotal()" type="text" class="form-control" placeholder="Enter Total Telemetri" formControlName="total">
-    </div>
-    <div class="form-group">
-      <label>Daily Manuals (24 jam):</label>
-      <input type="text"  class="form-control" placeholder="Enter Daily Manuals (24 jam)" formControlName="rain">
+      <label>Vertical Wind:</label>
+      <input type="text"  class="form-control" placeholder="Enter Vertical Wind" formControlName="v_component_of_wind_10m">
     </div>
   </form>
 </div>

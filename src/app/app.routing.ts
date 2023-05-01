@@ -10,7 +10,9 @@ import { LandingComponent } from './examples/landing/landing.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import {AllComponentComponent} from './components/all-component/all-component.component';
 import { RainfallComponent } from 'app/components/rainfall/rainfall.component';
-import { ClimatologyComponent } from 'app/components/climatology/climatology.component';
+import { AboutComponent } from 'app/components/about/about.component';
+import { WlaharCilacapComponent } from 'app/components/wlahar-cilacap/wlahar-cilacap.component';
+import { TelajasariComponent } from 'app/components/telajasari/telajasari.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -20,8 +22,10 @@ const routes: Routes =[
     { path: 'landing',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
     { path: 'all-component', component: AllComponentComponent },
+    { path: 'cilacap-data', component: WlaharCilacapComponent },
     { path: 'rainfall', component: RainfallComponent },
-    { path: 'climatology', component: ClimatologyComponent },
+    { path: 'about', component: AboutComponent },
+    { path: 'telajasari-data', component: TelajasariComponent },
 ];
 
 @NgModule({

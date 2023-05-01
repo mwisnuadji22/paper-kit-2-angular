@@ -1,4 +1,4 @@
-export interface FormModel {
+export interface CilacapModel {
   id?: string
   no?: number;
   year: string

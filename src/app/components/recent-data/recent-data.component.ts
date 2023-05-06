@@ -46,6 +46,8 @@ export class RecentDataComponent implements OnInit {
         next: (res) => {
           this.rainfalls = res;
           this.rainfalls.forEach(item => {
+            const parse = +item.month - 1;
+            item.month = parse.toString();
             item.month_date = {
               year: item.year,
               day: '1',
@@ -62,6 +64,8 @@ export class RecentDataComponent implements OnInit {
         next: (res) => {
           this.tmaResponse = res;
           this.tmaResponse.forEach(item => {
+            const parse = +item.month - 1;
+            item.month = parse.toString();
             item.month_date = {
               year: item.year,
               day: '1',

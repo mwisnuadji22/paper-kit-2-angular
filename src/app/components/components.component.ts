@@ -8,9 +8,6 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
     ngb-progressbar {
         margin-top: 5rem;
     }
-    .title-brand {
-        margin-bottom: 6rem;
-    }
     `]
 })
 

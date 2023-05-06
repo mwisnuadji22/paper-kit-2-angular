@@ -4330,6 +4330,19 @@
       "u_component_of_wind_10m": "-0.091",
       "v_component_of_wind_10m": "0.347",
       "no": 60
+    },
+    {
+      "id": "f5b26fcd-bffe-4223-9f54-ddb1b407a53d",
+      "no": 61,
+      "year": "2015",
+      "month": "1",
+      "dewpoint_2m_temperature": "1",
+      "maximum_2m_air_temperature": "1",
+      "mean_2m_air_temperature": "1",
+      "minimum_2m_air_temperature": "11",
+      "total_precipitation": "1",
+      "u_component_of_wind_10m": "1",
+      "v_component_of_wind_10m": "1"
     }
   ],
   "user": [

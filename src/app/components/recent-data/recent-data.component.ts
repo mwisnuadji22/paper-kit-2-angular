@@ -4,6 +4,9 @@ import { PosHome, RainfallModel, ResponsePosHome } from 'app/shared/fetch-api/mo
 import { ClimatologyResponse } from 'app/shared/fetch-api/model/climatology-home.model';
 import { ClimatologyService } from 'app/shared/fetch-api/services/climatology.service';
 import { UserService } from 'app/shared/fetch-api/services/user.service';
+import { CilacapService } from 'app/shared/fetch-api/services/cilacap.service';
+import { CilacapModel } from 'app/shared/fetch-api/model/cilacap.model';
+import { TelajasariService } from 'app/shared/fetch-api/services/telajasari.service';
 
 @Component({
   selector: 'app-recent-data',
@@ -11,11 +14,11 @@ import { UserService } from 'app/shared/fetch-api/services/user.service';
   styleUrls: ['./recent-data.component.scss']
 })
 export class RecentDataComponent implements OnInit {
-  rainfalls: ResponsePosHome[] = [];
+  rainfalls: CilacapModel[] = [];
   rainfallByArea1: ResponsePosHome[] = [];
   rainfallByArea2: ResponsePosHome[] = [];
   rainfallByArea3: ResponsePosHome[] = [];
-  tmaResponse: ClimatologyResponse[] = [];
+  tmaResponse: CilacapModel[] = [];
   tmaByArea1: ClimatologyResponse[] = [];
   tmaByArea2: ClimatologyResponse[] = [];
   tmaByArea3: ClimatologyResponse[] = [];
@@ -24,7 +27,9 @@ export class RecentDataComponent implements OnInit {
   constructor(
     private rainfallService: RainfallService,
     private tmaService: ClimatologyService,
-    private userService: UserService
+    private userService: UserService,
+    private cilacapService: CilacapService,
+    private telajasariService: TelajasariService,
   ) {}
   ngOnInit(): void {
     this.getRainFall();
@@ -36,25 +41,33 @@ export class RecentDataComponent implements OnInit {
   }
 
   getRainFall(): void {
-    this.rainfallService.getRainFallHome()
+    this.cilacapService.getCilacapData()
       .subscribe({
         next: (res) => {
           this.rainfalls = res;
-          this.rainfallByArea1 = this.rainfalls.filter((rainfall) => rainfall.pos.wilayah === '1');
-          this.rainfallByArea2 = this.rainfalls.filter((rainfall) => rainfall.pos.wilayah === '2');
-          this.rainfallByArea3 = this.rainfalls.filter((rainfall) => rainfall.pos.wilayah === '3');
+          this.rainfalls.forEach(item => {
+            item.month_date = {
+              year: item.year,
+              day: '1',
+              month: item.month
+            }
+          })
         }
       })
   }
 
   getTMA(): void {
-    this.tmaService.getListClimatologyHome()
+    this.telajasariService.getTelajasariData()
       .subscribe({
-        next: (res: ClimatologyResponse[]) => {
+        next: (res) => {
           this.tmaResponse = res;
-          this.tmaByArea1 = this.tmaResponse.filter((tma) => tma.pos.wilayah === '1');
-          this.tmaByArea2 = this.tmaResponse.filter((tma) => tma.pos.wilayah === '2');
-          this.tmaByArea3 = this.tmaResponse.filter((tma) => tma.pos.wilayah === '3');
+          this.tmaResponse.forEach(item => {
+            item.month_date = {
+              year: item.year,
+              day: '1',
+              month: item.month
+            }
+          })
         }
       })
   }

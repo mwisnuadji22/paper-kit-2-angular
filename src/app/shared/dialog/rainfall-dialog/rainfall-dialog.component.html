@@ -7,17 +7,32 @@
 <div class="modal-body">
   <form [formGroup]="formGroup" class="w-100">
     <div class="form-group">
-      <label>Year:</label>
-      <input formControlName="year" autocomplete="off" class="form-control" name="date">
+      <label>Year: <strong class="text-danger">*</strong></label>
+      <input formControlName="year" autocomplete="off" class="form-control" name="date" placeholder="Input Year"
+             pattern="[0-9]*" inputmode="numeric" digitOnly
+             [ngClass]="{ 'border border-danger' : formGroup.get('year').invalid && (formGroup.get('year').dirty || formGroup.get('year').touched) }"
+      >
+      <small *ngIf="formGroup.get('year').invalid && (formGroup.get('year').dirty || formGroup.get('year').touched)">
+        <span class="text-danger" *ngIf="formGroup.get('year').errors?.required">
+          Field year must be filled.
+        </span>
+      </small>
     </div>
     <div class="form-group">
-      <label >Month:</label>
+      <label >Month: <strong class="text-danger">*</strong></label>
       <ng-select
         [items]="dataOptions"
         bindLabel="name"
         bindValue="id"
         formControlName="month"
+        placeholder="Input Month"
+        [ngClass]="{ 'select-danger' : formGroup.get('month').invalid && (formGroup.get('month').dirty || formGroup.get('month').touched) }"
       ></ng-select>
+      <small *ngIf="formGroup.get('month').invalid && (formGroup.get('month').dirty || formGroup.get('month').touched)">
+        <span class="text-danger" *ngIf="formGroup.get('month').errors?.required">
+          Field month must be filled.
+        </span>
+      </small>
     </div>
     <div class="form-group">
       <label>dewpoint:</label>
@@ -51,7 +66,7 @@
 </div>
 <div class="modal-footer">
   <div class="left-side">
-    <button type="button" class="btn btn-default btn-link" (click)="save(formGroup.value)">Save</button>
+    <button type="button" class="btn btn-default btn-link" (click)="save(formGroup.value)" [disabled]="!formGroup.valid">Save</button>
   </div>
   <div class="divider"></div>
   <div class="right-side">

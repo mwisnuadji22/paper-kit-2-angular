@@ -5,3 +5,9 @@
 .example-month-picker .mat-calendar-arrow {
   display: none;
 }
+
+
+.select-danger::ng-deep.ng-select-container {
+  border: 1px solid #dc3545!important;
+  box-shadow: none;
+}

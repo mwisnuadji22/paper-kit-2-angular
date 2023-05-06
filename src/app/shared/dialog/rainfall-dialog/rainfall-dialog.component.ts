@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FormModel } from 'app/shared/dialog/rainfall-dialog/interface/form.model';
 import { v4 as uuidv4 } from 'uuid';
 import { CilacapModel } from 'app/shared/fetch-api/model/cilacap.model';
@@ -85,8 +85,8 @@ export class RainfallDialogComponent implements OnInit {
     this.formGroup = new FormGroup({
       id: new FormControl(uuidv4()),
       no: new FormControl(),
-      year: new FormControl(),
-      month: new FormControl(),
+      year: new FormControl('', [Validators.required]),
+      month: new FormControl(null, [Validators.required]),
       dewpoint_2m_temperature: new FormControl(),
       maximum_2m_air_temperature: new FormControl(),
       mean_2m_air_temperature: new FormControl(),

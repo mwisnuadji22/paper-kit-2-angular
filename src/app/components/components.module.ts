@@ -34,20 +34,22 @@ import { ClimatologyDialogComponent } from 'app/shared/dialog/climatology-dialog
 import { CilacapService } from 'app/shared/fetch-api/services/cilacap.service';
 import { TelajasariService } from 'app/shared/fetch-api/services/telajasari.service';
 import { UserService } from 'app/shared/fetch-api/services/user.service';
+import { DigitOnlyDirective } from 'app/shared/directive/digit-only.directive';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    NgbModule,
-    NouisliderModule,
-    RouterModule,
-    JwBootstrapSwitchNg2Module,
-    ReactiveFormsModule,
-    NgSelectModule,
-    DateParsePipe,
-    HttpClientModule,
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        NgbModule,
+        NouisliderModule,
+        RouterModule,
+        JwBootstrapSwitchNg2Module,
+        ReactiveFormsModule,
+        NgSelectModule,
+        DateParsePipe,
+        HttpClientModule,
+        DigitOnlyDirective,
+    ],
   declarations: [
     ComponentsComponent,
     BasicelementsComponent,

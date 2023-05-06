@@ -18,15 +18,22 @@
                               </a>
                           </div>
                           <form class="register-form" [formGroup]="formGroup" (ngSubmit)="submit(formGroup.value, formGroup.valid)">
-                              <label>Email</label>
-                              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
-                                <div class="input-group-prepend">
+                              <label>Username</label>
+                              <div class="flex flex-column">
+                                  <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                                      <div class="input-group-prepend">
                                   <span class="input-group-text">
                                       <i class="nc-icon nc-email-85"></i>
                                   </span>
-                                </div>
+                                      </div>
 
-                                  <input type="text" class="form-control" formControlName="email" placeholder="Email" (focus)="focus=true" (blur)="focus=false" >
+                                      <input type="text" class="form-control" formControlName="email" placeholder="Username" (focus)="focus=true" (blur)="focus=false" >
+                                  </div>
+                                  <small *ngIf="formGroup.get('email').invalid && (formGroup.get('email').dirty || formGroup.get('email').touched)">
+                                  <span *ngIf="formGroup.get('email').errors?.required">
+                                      Username must be field.
+                                  </span>
+                                  </small>
                               </div>
 
                               <label>Password</label>
@@ -36,10 +43,30 @@
                                       <i class="nc-icon nc-key-25"></i>
                                   </span>
                                 </div>
-                                  <input type="password" class="form-control" formControlName="password" placeholder="Password" (focus)="focus1=true" (blur)="focus1=false" >
+                                  <input type="password" maxlength="16" class="form-control"  formControlName="password" placeholder="Password" (focus)="focus1=true" (blur)="onBlur()" >
                               </div>
+                              <small style="display: flex;flex-direction: column">
+                                  <span *ngIf="pattern.required">
+                                      Password must be field.
+                                  </span>
+                                  <span *ngIf="pattern.minEight" class="text-white">
+                                      Password minimum 8 characters.
+                                  </span>
+                                  <span *ngIf="pattern.oneUpperCase" class="text-white">
+                                      Password must be at least one uppercase.
+                                  </span>
+                                  <span *ngIf="pattern.oneLowerCase" class="text-white">
+                                      Password must be at least one lowercase.
+                                  </span>
+                                  <span *ngIf="pattern.oneDigits" class="text-white">
+                                      Password must be at least one digits.
+                                  </span>
+                                  <span *ngIf="pattern.oneSpecialChar" class="text-white">
+                                      Password must be at least one special characters
+                                  </span>
+                              </small>
                               <span class="text-white" *ngIf="errorInvalid">Your email address or password has invalid. Please correct and try again.</span>
-                              <button class="btn btn-danger btn-block btn-round" [disabled]="formGroup.invalid">Login</button>
+                              <button class="btn btn-danger btn-block btn-round" [disabled]="formGroup.invalid || !isValidBtn">Login</button>
                           </form>
                       </div>
                     </div>

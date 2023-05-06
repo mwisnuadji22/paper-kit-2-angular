@@ -77,8 +77,8 @@ export class RainfallDialogComponent implements OnInit {
   ngOnInit() {
     this.initForm();
     if (this.data || this.dataT) {
-      this.setForm();
     }
+      this.setForm();
   }
 
   initForm() {

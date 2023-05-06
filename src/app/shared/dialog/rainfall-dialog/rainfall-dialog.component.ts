@@ -78,7 +78,7 @@ export class RainfallDialogComponent implements OnInit {
     this.initForm();
     if (this.data || this.dataT) {
       this.setForm();
-    }
+  }
   }
 
   initForm() {

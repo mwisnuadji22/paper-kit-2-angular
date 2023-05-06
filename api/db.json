@@ -3548,26 +3548,13 @@
       "u_component_of_wind_10m": "0.088",
       "v_component_of_wind_10m": "0.295",
       "no": 60
-    },
-    {
-      "id": "90cc05b6-4226-440f-9bb0-7d87eb154c80",
-      "year": "2020",
-      "month": "1",
-      "dewpoint_2m_temperature": "23.306",
-      "maximum_2m_air_temperature": "31.983",
-      "mean_2m_air_temperature": "26.002",
-      "minimum_2m_air_temperature": "22.517",
-      "total_precipitation": "0.404",
-      "u_component_of_wind_10m": "0.477",
-      "v_component_of_wind_10m": "0.159",
-      "no": 61
     }
   ],
   "telajasari": [
     {
       "id": "861aefd0-2863-42dc-be4e-c446ac12968b",
       "no": 1,
-      "year": "2017",
+      "year": "2015",
       "month": "1",
       "dewpoint_2m_temperature": "21.819",
       "maximum_2m_air_temperature": "30.555",

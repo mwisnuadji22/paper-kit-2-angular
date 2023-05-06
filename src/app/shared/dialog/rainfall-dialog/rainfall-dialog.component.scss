@@ -11,3 +11,12 @@
   border: 1px solid #dc3545!important;
   box-shadow: none;
 }
+
+.notification-error {
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  i {
+    margin-top: 1px;
+  }
+}

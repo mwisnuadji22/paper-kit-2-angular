@@ -44,7 +44,7 @@
         </thead>
         <ng-container *ngFor="let item of data | slice: (page-1) * pageSize : page * pageSize; let i = index">
           <tr>
-            <td style="text-align:center;vertical-align:middle;">{{ item.no }}</td>
+            <td style="text-align:center;vertical-align:middle;">{{ page | numberIndex: pageSize : i }}</td>
             <td style="text-align:center;vertical-align:middle;">{{ item.year }}</td>
             <td style="text-align:center;vertical-align:middle;">{{ item.month_date | dateParse: 'MMMM' }}</td>
             <td style="text-align:center;vertical-align:middle;">{{ item.dewpoint_2m_temperature }}</td>
@@ -74,7 +74,12 @@
       <ngb-pagination
         [(page)]="page"
         [pageSize]="pageSize"
-        [collectionSize]="data.length"></ngb-pagination>
+        (pageChange)="onChangePages($event, true)"
+        [collectionSize]="data.length">
+        <ng-template ngbPaginationPrevious>Prev</ng-template>
+        <ng-template ngbPaginationNext>Next</ng-template>
+        <ng-template ngbPaginationNumber let-p>{{ getPageSymbol(p) }}</ng-template>
+      </ngb-pagination>
     </div>
   </div>
 </section>

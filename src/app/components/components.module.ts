@@ -35,6 +35,7 @@ import { CilacapService } from 'app/shared/fetch-api/services/cilacap.service';
 import { TelajasariService } from 'app/shared/fetch-api/services/telajasari.service';
 import { UserService } from 'app/shared/fetch-api/services/user.service';
 import { DigitOnlyDirective } from 'app/shared/directive/digit-only.directive';
+import { NumberIndexPipe } from 'app/shared/pipe/number-index.pipe';
 
 @NgModule({
     imports: [
@@ -49,6 +50,7 @@ import { DigitOnlyDirective } from 'app/shared/directive/digit-only.directive';
         DateParsePipe,
         HttpClientModule,
         DigitOnlyDirective,
+        NumberIndexPipe,
     ],
   declarations: [
     ComponentsComponent,

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TelajasariService } from 'app/shared/fetch-api/services/telajasari.service';
 import { CilacapModel } from 'app/shared/fetch-api/model/cilacap.model';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { UserService } from 'app/shared/fetch-api/services/user.service';
 import { RainfallDialogComponent } from 'app/shared/dialog/rainfall-dialog/rainfall-dialog.component';
 import { format } from 'date-fns';
@@ -10,6 +10,7 @@ import { DialogBasicComponent } from 'app/shared/dialog/basic/dialog-basic.compo
 import { DialogBasic } from 'app/shared/dialog/basic/dialog-basic.interface';
 import { ClimatologyDialogComponent } from 'app/shared/dialog/climatology-dialog/climatology-dialog.component';
 import { v4 as uuidv4 } from 'uuid';
+import { be } from 'date-fns/locale';
 @Component({
   selector: 'app-telajasari',
   templateUrl: './telajasari.component.html',
@@ -25,12 +26,22 @@ export class TelajasariComponent implements OnInit {
   pageSize = 10;
   start: string;
   end: string;
+  params: Params;
   constructor(
+      private activateRouter: ActivatedRoute,
     private router: Router,
     private userService: UserService,
     private telajasariService: TelajasariService,
     private modalService: NgbModal
   ) {
+  }
+
+  getPageSymbol(current: number) {
+    return current;
+  }
+
+  onChangePages(event, click: boolean = false) {
+    this.page = event;
   }
   ngOnInit() {
     this.getTelajasariData();
@@ -46,18 +57,10 @@ export class TelajasariComponent implements OnInit {
       centered: true,
       backdrop: true
     })
-    this.modalConfirm.componentInstance.type = 'telajasari';
-    this.modalConfirm.result.then((param) => {
-      if (param.type === 'add') {
-        param.payload.no = this.data.length + 1;
-        this.telajasariService.addTelajasari(param.payload)
-          .subscribe({
-            next: () => {
-              window.location.reload();
-            }
-          });
-      }
-    })
+    this.modalConfirm.componentInstance.type = {
+      name: 'telajasari',
+      data: this.data
+    };
   }
 
   getTelajasariData(): void {
@@ -82,7 +85,7 @@ export class TelajasariComponent implements OnInit {
             this.start = startDate;
             this.end = endDate;
           })
-          console.log(this.data)
+          this.data.sort((a, b) => +a.year - +b.year);
         }
       })
   }
@@ -125,6 +128,10 @@ export class TelajasariComponent implements OnInit {
         next: (res) => {
           this.modalRefUpdate = this.modalService.open(RainfallDialogComponent);
           this.modalRefUpdate.componentInstance.dataT = res;
+          this.modalRefUpdate.componentInstance.type = {
+            name: 'telajasari',
+            data: this.data
+          };
         }
       })
   }

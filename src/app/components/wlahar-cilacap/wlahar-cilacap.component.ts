@@ -45,17 +45,10 @@ export class WlaharCilacapComponent implements OnInit {
       centered: true,
       backdrop: true
     });
-    this.modalConfirm.result.then((param) => {
-      if (param.type === 'add') {
-        param.payload.no = this.data.length + 1;
-        this.cilacapService.addCilacap(param.payload)
-          .subscribe({
-            next: () => {
-              window.location.reload();
-            }
-          });
-      }
-    })
+    this.modalConfirm.componentInstance.type = {
+      name: 'cilacap',
+      data: this.data
+    };
   }
 
   getCilacapData(): void {
@@ -80,7 +73,7 @@ export class WlaharCilacapComponent implements OnInit {
             this.start = startDate;
             this.end = endDate;
           })
-          console.log(this.data.length)
+          this.data.sort((a, b) => +a.year - +b.year);
         }
       })
   }
@@ -123,6 +116,10 @@ export class WlaharCilacapComponent implements OnInit {
         next: (res) => {
           this.modalRefUpdate = this.modalService.open(RainfallDialogComponent);
           this.modalRefUpdate.componentInstance.data = res;
+          this.modalRefUpdate.componentInstance.type = {
+            name: 'cilacap',
+            data: this.data
+          };
         }
       })
   }

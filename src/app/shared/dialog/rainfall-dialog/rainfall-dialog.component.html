@@ -5,12 +5,17 @@
   </button>
 </div>
 <div class="modal-body">
+  <div class="notification-error bg-warning d-flex align-items-center w-100 mb-3" *ngIf="isAlreadyExist">
+    <i class="fa fa-exclamation-circle"></i>&nbsp;
+    <span>Data year and month is already exist.</span>
+  </div>
   <form [formGroup]="formGroup" class="w-100">
     <div class="form-group">
       <label>Year: <strong class="text-danger">*</strong></label>
       <input formControlName="year" autocomplete="off" class="form-control" name="date" placeholder="Input Year"
+             maxlength="4"
              pattern="[0-9]*" inputmode="numeric" digitOnly
-             [ngClass]="{ 'border border-danger' : formGroup.get('year').invalid && (formGroup.get('year').dirty || formGroup.get('year').touched) }"
+             [ngClass]="{ 'border border-danger' : (formGroup.get('year').invalid && (formGroup.get('year').dirty || formGroup.get('year').touched)) || isAlreadyExist }"
       >
       <small *ngIf="formGroup.get('year').invalid && (formGroup.get('year').dirty || formGroup.get('year').touched)">
         <span class="text-danger" *ngIf="formGroup.get('year').errors?.required">
@@ -26,7 +31,7 @@
         bindValue="id"
         formControlName="month"
         placeholder="Input Month"
-        [ngClass]="{ 'select-danger' : formGroup.get('month').invalid && (formGroup.get('month').dirty || formGroup.get('month').touched) }"
+        [ngClass]="{ 'select-danger' : (formGroup.get('month').invalid && (formGroup.get('month').dirty || formGroup.get('month').touched)) || isAlreadyExist }"
       ></ng-select>
       <small *ngIf="formGroup.get('month').invalid && (formGroup.get('month').dirty || formGroup.get('month').touched)">
         <span class="text-danger" *ngIf="formGroup.get('month').errors?.required">

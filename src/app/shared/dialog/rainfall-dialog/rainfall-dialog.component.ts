@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { CilacapModel } from 'app/shared/fetch-api/model/cilacap.model';
 import { CilacapService } from 'app/shared/fetch-api/services/cilacap.service';
 import { TelajasariService } from 'app/shared/fetch-api/services/telajasari.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dialog',
@@ -15,12 +16,16 @@ import { TelajasariService } from 'app/shared/fetch-api/services/telajasari.serv
 export class RainfallDialogComponent implements OnInit {
   @Input() data: CilacapModel;
   @Input() dataT: CilacapModel;
-  @Input() type: string;
+  @Input() type: {
+    name: string,
+    data: CilacapModel[]
+  };
   formGroup: FormGroup
   rainfall: CilacapModel;
+  isAlreadyExist: boolean = false;
   dataOptions = [
     {
-      id: '1',
+      id: '01',
       name: 'January'
     },
     {
@@ -71,14 +76,25 @@ export class RainfallDialogComponent implements OnInit {
   constructor(
     public activeModal: NgbActiveModal,
     private cilacapService: CilacapService,
-    private telajasariService: TelajasariService
+    private telajasariService: TelajasariService,
+    private router: Router
   ) {}
 
   ngOnInit() {
     this.initForm();
     if (this.data || this.dataT) {
       this.setForm();
-  }
+    }
+    this.formGroup.get('year').valueChanges.subscribe((res) => {
+      if (res) {
+        this.isAlreadyExist = false;
+      }
+    })
+    this.formGroup.get('month').valueChanges.subscribe((res) => {
+      if (res) {
+        this.isAlreadyExist = false;
+      }
+    })
   }
 
   initForm() {
@@ -130,48 +146,93 @@ export class RainfallDialogComponent implements OnInit {
   }
 
   save(value: FormModel): void {
+    this.isAlreadyExist = false;
     if (this.data) {
       this.updateRainfall(value)
     } else if (this.dataT) {
       this.updateTelajasari(value)
     } else {
-      if (this.type) {
+      if (this.type && this.type.name === 'telajasari') {
         this.addTelajasari(value)
       } else {
-        this.addRainfall(value)
+        this.addCilacap(value)
       }
     }
   }
 
   addTelajasari(payload: CilacapModel) {
-    this.activeModal.close({ type: 'add', payload: payload})
+    payload.no = this.type.data.length + 1;
+    const find = this.type.data.find(value => +value.month === (+payload.month - 1) && value.year === payload.year);
+    if (!find) {
+      this.telajasariService.addTelajasari(payload)
+          .subscribe({
+            next: () => {
+              this.activeModal.close('close add telajasari');
+              this.router.navigateByUrl('/', { skipLocationChange: true })
+                  .then(() => {
+                    this.router.navigate(['telajasari-data'], { queryParams: { page: '7' } })
+                  })
+            }
+          })
+    } else {
+      this.isAlreadyExist = true;
+    }
   }
 
-  addRainfall(payload: CilacapModel) {
-    this.activeModal.close({ type: 'add', payload: payload})
+  addCilacap(payload: CilacapModel) {
+    payload.no = this.type.data.length + 1;
+    const find = this.type.data.find(value => +value.month === (+payload.month - 1) && value.year === payload.year);
+    if (!find) {
+      this.cilacapService.addCilacap(payload)
+          .subscribe({
+            next: () => {
+              this.activeModal.close('close add cilacap');
+              this.router.navigateByUrl('/', { skipLocationChange: true })
+                  .then(() => {
+                    this.router.navigate(['cilacap-data'], { queryParams: { page: '7' } })
+                  })
+            }
+          })
+    } else {
+      this.isAlreadyExist = true;
+    }
   }
 
   updateTelajasari(payload: CilacapModel) {
     payload.no = this.dataT.no;
-    this.telajasariService.updateTelajasari(payload)
-      .subscribe({
-        next: () => {
-          window.location.reload();
-        }
-      })
-    this.activeModal.close({ type: 'update', payload: payload})
-    window.location.reload()
+    const find = this.type.data.find(value => +value.month === (+payload.month - 1) && value.year === payload.year);
+    if (!find) {
+      this.telajasariService.updateTelajasari(payload)
+          .subscribe({
+            next: () => {
+              this.activeModal.close({ type: 'update', payload: payload});
+              this.router.navigateByUrl('/', { skipLocationChange: true })
+                  .then(() => {
+                    this.router.navigate(['telajasari-data'], { queryParams: { page: '7' } })
+                  })
+            }
+          })
+    } else {
+      this.isAlreadyExist = true;
+    }
   }
 
   updateRainfall(payload: CilacapModel) {
-    payload.no = this.data.no;
-    this.cilacapService.updateCilacap(payload)
-      .subscribe({
-        next: () => {
-          window.location.reload();
-        }
-      })
-    this.activeModal.close({ type: 'update', payload: payload})
-    window.location.reload()
+    const find = this.type.data.find(value => +value.month === (+payload.month - 1) && value.year === payload.year);
+    if (!find) {
+      payload.no = this.data.no;
+      this.cilacapService.updateCilacap(payload)
+          .subscribe({
+            next: () => {
+              this.activeModal.close({ type: 'update', payload: payload})
+              this.router.navigateByUrl('/', { skipLocationChange: true })
+                  .then(() => {
+                    this.router.navigate(['cilacap-data'], { queryParams: { page: '7' } })
+                  })
+            }
+          })
+    } else {
+      this.isAlreadyExist = true;
+    }
   }
 }

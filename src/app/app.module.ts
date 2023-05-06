@@ -14,6 +14,7 @@ import { ExamplesModule } from './examples/examples.module';
 import { HttpClientModule } from '@angular/common/http';
 import { UserService } from 'app/shared/fetch-api/services/user.service';
 import { setTheme } from 'ngx-bootstrap/utils';
+import { NumberIndexPipe } from './shared/pipe/number-index.pipe';
 setTheme('bs4');
 
 

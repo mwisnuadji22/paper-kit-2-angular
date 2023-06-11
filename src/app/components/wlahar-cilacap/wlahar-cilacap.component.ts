@@ -31,6 +31,14 @@ export class WlaharCilacapComponent implements OnInit {
     private modalService: NgbModal
   ) {
   }
+    getPageSymbol(current: number) {
+    return current;
+  }
+
+  onChangePages(event, click: boolean = false) {
+    this.page = event;
+  }
+  
   ngOnInit() {
     this.getCilacapData();
     this.userService.getStateLogin()
@@ -47,7 +55,8 @@ export class WlaharCilacapComponent implements OnInit {
     });
     this.modalConfirm.componentInstance.type = {
       name: 'cilacap',
-      data: this.data
+      data: this.data,
+      type: 'Add'
     };
   }
 
@@ -58,7 +67,7 @@ export class WlaharCilacapComponent implements OnInit {
           this.data = res;
           let amountMonth = [];
           let amountYear = [];
-          this.data.forEach((item) => {
+          this.data.forEach((item, index) => {
             const parse = +item.month - 1;
             item.month = parse.toString();
             item.month_date = {
@@ -118,7 +127,8 @@ export class WlaharCilacapComponent implements OnInit {
           this.modalRefUpdate.componentInstance.data = res;
           this.modalRefUpdate.componentInstance.type = {
             name: 'cilacap',
-            data: this.data
+            data: this.data,
+            type: 'Update'
           };
         }
       })

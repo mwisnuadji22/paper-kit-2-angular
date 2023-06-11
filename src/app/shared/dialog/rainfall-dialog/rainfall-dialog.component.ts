@@ -18,7 +18,8 @@ export class RainfallDialogComponent implements OnInit {
   @Input() dataT: CilacapModel;
   @Input() type: {
     name: string,
-    data: CilacapModel[]
+    data: CilacapModel[],
+    type: string
   };
   formGroup: FormGroup
   rainfall: CilacapModel;
@@ -218,9 +219,9 @@ export class RainfallDialogComponent implements OnInit {
   }
 
   updateRainfall(payload: CilacapModel) {
+    payload.no = this.data.no;
     const find = this.type.data.find(value => +value.month === (+payload.month - 1) && value.year === payload.year);
     if (!find) {
-      payload.no = this.data.no;
       this.cilacapService.updateCilacap(payload)
           .subscribe({
             next: () => {
